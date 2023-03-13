@@ -1,0 +1,5 @@
+workspace {
+  uid = "f7b2b559-868f-446e-bf71-5f09afa543df"
+  name = "gwr-takeda"
+  staleStateThresholdMinutes = undefined
+}
