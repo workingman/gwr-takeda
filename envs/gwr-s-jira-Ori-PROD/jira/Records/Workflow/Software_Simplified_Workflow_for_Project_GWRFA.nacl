@@ -130,7 +130,7 @@ jira.Workflow Software_Simplified_Workflow_for_Project_GWRFA@s {
       ]
     },
     {
-      name = "Selected for Development"
+      name = "Selected for Development - GWR"
       description = ""
       to = jira.Status.instance.selected_for_development@s
       type = "global"
