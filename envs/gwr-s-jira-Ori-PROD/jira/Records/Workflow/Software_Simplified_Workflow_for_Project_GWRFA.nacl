@@ -152,9 +152,7 @@ jira.Workflow Software_Simplified_Workflow_for_Project_GWRFA@s {
             }
           },
         ]
-        conditions = {
-          type = "AllowOnlyReporter"
-        }
+        
       
       }
       properties = [
