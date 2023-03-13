@@ -1,0 +1,7 @@
+jira.ProjectComponent Salto_SaaS_s__Infra___BE@umuusbs {
+  name = "Infra - BE"
+  assigneeType = "COMPONENT_LEAD"
+  _parent = [
+    jira.Project.instance.Salto_SaaS@s,
+  ]
+}

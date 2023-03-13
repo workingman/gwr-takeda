@@ -1,0 +1,6 @@
+jira.IssueType _System__Service_request_with_approvals@hissss {
+  description = "A request that follows ITSM workflows."
+  name = "[System] Service request with approvals"
+  untranslatedName = "[System] Service request with approvals"
+  hierarchyLevel = 0
+}

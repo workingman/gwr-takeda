@@ -1,0 +1,86 @@
+jira.Automation shirCreateSubTasks_guytestproject_AlonCompanyProject10 {
+  name = "shirCreateSubTasks"
+  state = "ENABLED"
+  authorAccountId = {
+    id = "616e3f77e79ff6006f1eca7f"
+    displayName = "Shir Reifenberg"
+  }
+  actor = {
+    type = "ACCOUNT_ID"
+    value = {
+      id = "557058:f58131cb-b67d-43c7-b30d-6b58d40bd077"
+      displayName = "Automation for Jira"
+    }
+  }
+  trigger = {
+    component = "TRIGGER"
+    schemaVersion = 1
+    type = "jira.approval.completed.trigger"
+    children = [
+    ]
+    conditions = [
+    ]
+  }
+  components = [
+    {
+      component = "ACTION"
+      schemaVersion = 1
+      type = "jira.issue.create.subtasks"
+      value = {
+        subtasks = [
+          {
+            type = jira.IssueType.instance.AnIssueSubType
+            summary = "task number 1"
+          },
+          {
+            type = jira.IssueType.instance.Sub_task@b
+            summary = "task number 3"
+          },
+        ]
+      }
+      children = [
+      ]
+      conditions = [
+      ]
+    },
+    {
+      component = "ACTION"
+      schemaVersion = 1
+      type = "jira.version.release"
+      value = {
+        versionName = "wow"
+        overrideReleaseDate = "SET_ON_EMPTY"
+        project = {
+          type = "ID"
+          value = jira.Project.instance.guytestproject
+          additional = "software"
+        }
+      }
+      children = [
+      ]
+      conditions = [
+      ]
+    },
+  ]
+  canOtherRuleTrigger = false
+  notifyOnError = "FIRSTERROR"
+  projects = [
+    {
+      projectId = jira.Project.instance.guytestproject
+    },
+    {
+      projectId = jira.Project.instance.AlonCompanyProject10
+    },
+  ]
+  labels = [
+  ]
+  tags = [
+    {
+      tagType = "IS_RULE_UPDATED"
+      tagValue = "true"
+    },
+  ]
+  writeAccessType = "UNRESTRICTED"
+  collaborators = [
+  ]
+}

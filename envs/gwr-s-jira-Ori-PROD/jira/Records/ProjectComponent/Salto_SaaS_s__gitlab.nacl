@@ -1,0 +1,8 @@
+jira.ProjectComponent Salto_SaaS_s__gitlab@umuu {
+  description = "gitlab integration related"
+  name = "gitlab"
+  assigneeType = "PROJECT_DEFAULT"
+  _parent = [
+    jira.Project.instance.Salto_SaaS@s,
+  ]
+}

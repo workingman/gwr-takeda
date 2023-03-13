@@ -1,0 +1,135 @@
+jira.Project test2 {
+  key = "TST2"
+  description = ""
+  name = "test2"
+  projectTypeKey = "service_desk"
+  components = [
+    jira.ProjectComponent.instance.test2__Active_Directory@uus,
+    jira.ProjectComponent.instance.test2__Analytics_and_Reporting_Service@uusss,
+    jira.ProjectComponent.instance.test2__Billing_Services@uus,
+    jira.ProjectComponent.instance.test2__Cloud_Storage_Services@uuss,
+    jira.ProjectComponent.instance.test2__Data_Center_Services@uuss,
+    jira.ProjectComponent.instance.test2__Email_and_Collaboration_Services@uusss,
+    jira.ProjectComponent.instance.test2__Financial_Services@uus,
+    jira.ProjectComponent.instance.test2__HR_Services@uus,
+    jira.ProjectComponent.instance.test2__Intranet,
+    jira.ProjectComponent.instance.test2__Jira,
+    jira.ProjectComponent.instance.test2__Office_Network@uus,
+    jira.ProjectComponent.instance.test2__Payroll_Services@uus,
+    jira.ProjectComponent.instance.test2__Printers,
+    jira.ProjectComponent.instance.test2__Public_Website@uus,
+    jira.ProjectComponent.instance.test2__VPN_Server@uus,
+    jira.ProjectComponent.instance.test2__Webstore_Purchasing_Services@uuss,
+  ]
+  workflowScheme = jira.WorkflowScheme.instance.Jira_Service_Management_IT_Support_Workflow_Scheme_generated_for_Project_TST2@s
+  permissionScheme = jira.PermissionScheme.instance.Jira_Service_Management_Permission_Scheme_for_Project_TST2@s
+  notificationScheme = jira.NotificationScheme.instance.Default_Notification_Scheme@s
+  issueTypeScreenScheme = jira.IssueTypeScreenScheme.instance.TST2__Jira_Service_Management_Issue_Type_Screen_Scheme@fsssssss
+  issueTypeScheme = jira.IssueTypeScheme.instance.TST2__Jira_Service_Management_Issue_Type_Scheme@fssssss
+  fieldConfigurationScheme = jira.FieldConfigurationScheme.instance.Jira_Service_Management_Field_Configuration_Scheme_for_Project_TST2@s
+  leadAccountId = {
+    id = "5fa91999b2633d0076583a61"
+    displayName = "Alon Stern"
+  }
+  _generated_dependencies = [
+    {
+      reference = jira.FieldConfigurationItem.instance.Jira_Service_Management_Field_Configuration_for_Project_TST2_s_Affected_hardware__textfield__c_suuuu@uuuuuuumuuuuuum
+    },
+    {
+      reference = jira.FieldConfigurationItem.instance.Jira_Service_Management_Field_Configuration_for_Project_TST2_s_Approver_groups__multigrouppicker__c_suuuu@uuuuuuumuuuuuum
+    },
+    {
+      reference = jira.FieldConfigurationItem.instance.Jira_Service_Management_Field_Configuration_for_Project_TST2_s_Approvers__multiuserpicker__c@uuuuuuumuuuuu
+    },
+    {
+      reference = jira.FieldConfigurationItem.instance.Jira_Service_Management_Field_Configuration_for_Project_TST2_s_Assignee__user@uuuuuuumuuu
+    },
+    {
+      reference = jira.FieldConfigurationItem.instance.Jira_Service_Management_Field_Configuration_for_Project_TST2_s_Attachment__array@uuuuuuumuuu
+    },
+    {
+      reference = jira.FieldConfigurationItem.instance.Jira_Service_Management_Field_Configuration_for_Project_TST2_s_Backout_plan__textarea__c_suuuu@uuuuuuumuuuuuum
+    },
+    {
+      reference = jira.FieldConfigurationItem.instance.Jira_Service_Management_Field_Configuration_for_Project_TST2_s_Change_completion_date__datetime__c_ssuuuu@uuuuuuumuuuuuuum
+    },
+    {
+      reference = jira.FieldConfigurationItem.instance.Jira_Service_Management_Field_Configuration_for_Project_TST2_s_Change_reason__select__c_suuuu@uuuuuuumuuuuuum
+    },
+    {
+      reference = jira.FieldConfigurationItem.instance.Jira_Service_Management_Field_Configuration_for_Project_TST2_s_Change_risk__select__c_suuuu@uuuuuuumuuuuuum
+    },
+    {
+      reference = jira.FieldConfigurationItem.instance.Jira_Service_Management_Field_Configuration_for_Project_TST2_s_Change_start_date__datetime__c_ssuuuu@uuuuuuumuuuuuuum
+    },
+    {
+      reference = jira.FieldConfigurationItem.instance.Jira_Service_Management_Field_Configuration_for_Project_TST2_s_Change_type__select__c_suuuu@uuuuuuumuuuuuum
+    },
+    {
+      reference = jira.FieldConfigurationItem.instance.Jira_Service_Management_Field_Configuration_for_Project_TST2_s_Components__array@uuuuuuumuuu
+    },
+    {
+      reference = jira.FieldConfigurationItem.instance.Jira_Service_Management_Field_Configuration_for_Project_TST2_s_Description__string@uuuuuuumuuu
+    },
+    {
+      reference = jira.FieldConfigurationItem.instance.Jira_Service_Management_Field_Configuration_for_Project_TST2_s_Due_date__date_suu@uuuuuuumuuuum
+    },
+    {
+      reference = jira.FieldConfigurationItem.instance.Jira_Service_Management_Field_Configuration_for_Project_TST2_s_Impact__select__c@uuuuuuumuuuuu
+    },
+    {
+      reference = jira.FieldConfigurationItem.instance.Jira_Service_Management_Field_Configuration_for_Project_TST2_s_Implementation_plan__textarea__c_suuuu@uuuuuuumuuuuuum
+    },
+    {
+      reference = jira.FieldConfigurationItem.instance.Jira_Service_Management_Field_Configuration_for_Project_TST2_s_Investigation_reason__select__c_suuuu@uuuuuuumuuuuuum
+    },
+    {
+      reference = jira.FieldConfigurationItem.instance.Jira_Service_Management_Field_Configuration_for_Project_TST2_s_Issue_Type__issuetype_suu@uuuuuuumuuuum
+    },
+    {
+      reference = jira.FieldConfigurationItem.instance.Jira_Service_Management_Field_Configuration_for_Project_TST2_s_Labels__array@uuuuuuumuuu
+    },
+    {
+      reference = jira.FieldConfigurationItem.instance.Jira_Service_Management_Field_Configuration_for_Project_TST2_s_Linked_Issues__array_suu@uuuuuuumuuuum
+    },
+    {
+      reference = jira.FieldConfigurationItem.instance.Jira_Service_Management_Field_Configuration_for_Project_TST2_s_Operational_categorization__cascadingselect__c_suuuu@uuuuuuumuuuuuum
+    },
+    {
+      reference = jira.FieldConfigurationItem.instance.Jira_Service_Management_Field_Configuration_for_Project_TST2_s_Pending_reason__select__c_suuuu@uuuuuuumuuuuuum
+    },
+    {
+      reference = jira.FieldConfigurationItem.instance.Jira_Service_Management_Field_Configuration_for_Project_TST2_s_Planned_end__datetime__c_suuuu@uuuuuuumuuuuuum
+    },
+    {
+      reference = jira.FieldConfigurationItem.instance.Jira_Service_Management_Field_Configuration_for_Project_TST2_s_Planned_start__datetime__c_suuuu@uuuuuuumuuuuuum
+    },
+    {
+      reference = jira.FieldConfigurationItem.instance.Jira_Service_Management_Field_Configuration_for_Project_TST2_s_Priority__priority@uuuuuuumuuu
+    },
+    {
+      reference = jira.FieldConfigurationItem.instance.Jira_Service_Management_Field_Configuration_for_Project_TST2_s_Product_categorization__cascadingselect__c_suuuu@uuuuuuumuuuuuum
+    },
+    {
+      reference = jira.FieldConfigurationItem.instance.Jira_Service_Management_Field_Configuration_for_Project_TST2_s_Reporter__user@uuuuuuumuuu
+    },
+    {
+      reference = jira.FieldConfigurationItem.instance.Jira_Service_Management_Field_Configuration_for_Project_TST2_s_Root_cause__textarea__c_suuuu@uuuuuuumuuuuuum
+    },
+    {
+      reference = jira.FieldConfigurationItem.instance.Jira_Service_Management_Field_Configuration_for_Project_TST2_s_Severity__select__c@uuuuuuumuuuuu
+    },
+    {
+      reference = jira.FieldConfigurationItem.instance.Jira_Service_Management_Field_Configuration_for_Project_TST2_s_Summary__string@uuuuuuumuuu
+    },
+    {
+      reference = jira.FieldConfigurationItem.instance.Jira_Service_Management_Field_Configuration_for_Project_TST2_s_Test_plan__textarea__c_suuuu@uuuuuuumuuuuuum
+    },
+    {
+      reference = jira.FieldConfigurationItem.instance.Jira_Service_Management_Field_Configuration_for_Project_TST2_s_Urgency__select__c@uuuuuuumuuuuu
+    },
+    {
+      reference = jira.FieldConfigurationItem.instance.Jira_Service_Management_Field_Configuration_for_Project_TST2_s_Workaround__textarea__c@uuuuuuumuuuuu
+    },
+  ]
+}

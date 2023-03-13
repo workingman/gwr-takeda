@@ -1,0 +1,56 @@
+jira.Project testProject {
+  key = "TES"
+  description = ""
+  name = "testProject"
+  projectTypeKey = "service_desk"
+  components = [
+    jira.ProjectComponent.instance.testProject__Intranet,
+    jira.ProjectComponent.instance.testProject__Jira,
+    jira.ProjectComponent.instance.testProject__Public_website@uus,
+  ]
+  workflowScheme = jira.WorkflowScheme.instance.Jira_Service_Management_IT_Support_Workflow_Scheme_generated_for_Project_TES@s
+  permissionScheme = jira.PermissionScheme.instance.Jira_Service_Management_Permission_Scheme_for_Project_TES@s
+  notificationScheme = jira.NotificationScheme.instance.Default_Notification_Scheme@s
+  issueTypeScreenScheme = jira.IssueTypeScreenScheme.instance.TES__Jira_Service_Management_Issue_Type_Screen_Scheme@fsssssss
+  issueTypeScheme = jira.IssueTypeScheme.instance.TES__Jira_Service_Management_Issue_Type_Scheme@fssssss
+  fieldConfigurationScheme = jira.FieldConfigurationScheme.instance.Jira_Service_Management_Field_Configuration_Scheme_for_Project_TES@s
+  leadAccountId = {
+    id = "5fa91999b2633d0076583a61"
+    displayName = "Alon Stern"
+  }
+  _generated_dependencies = [
+    {
+      reference = jira.FieldConfigurationItem.instance.Jira_Service_Management_Field_Configuration_for_Project_TES_s_Approvers__multiuserpicker__c@uuuuuuumuuuuu
+    },
+    {
+      reference = jira.FieldConfigurationItem.instance.Jira_Service_Management_Field_Configuration_for_Project_TES_s_Assignee__user@uuuuuuumuuu
+    },
+    {
+      reference = jira.FieldConfigurationItem.instance.Jira_Service_Management_Field_Configuration_for_Project_TES_s_Attachment__array@uuuuuuumuuu
+    },
+    {
+      reference = jira.FieldConfigurationItem.instance.Jira_Service_Management_Field_Configuration_for_Project_TES_s_Description__string@uuuuuuumuuu
+    },
+    {
+      reference = jira.FieldConfigurationItem.instance.Jira_Service_Management_Field_Configuration_for_Project_TES_s_Due_date__date_suu@uuuuuuumuuuum
+    },
+    {
+      reference = jira.FieldConfigurationItem.instance.Jira_Service_Management_Field_Configuration_for_Project_TES_s_Issue_Type__issuetype_suu@uuuuuuumuuuum
+    },
+    {
+      reference = jira.FieldConfigurationItem.instance.Jira_Service_Management_Field_Configuration_for_Project_TES_s_Labels__array@uuuuuuumuuu
+    },
+    {
+      reference = jira.FieldConfigurationItem.instance.Jira_Service_Management_Field_Configuration_for_Project_TES_s_Linked_Issues__array_suu@uuuuuuumuuuum
+    },
+    {
+      reference = jira.FieldConfigurationItem.instance.Jira_Service_Management_Field_Configuration_for_Project_TES_s_Priority__priority@uuuuuuumuuu
+    },
+    {
+      reference = jira.FieldConfigurationItem.instance.Jira_Service_Management_Field_Configuration_for_Project_TES_s_Reporter__user@uuuuuuumuuu
+    },
+    {
+      reference = jira.FieldConfigurationItem.instance.Jira_Service_Management_Field_Configuration_for_Project_TES_s_Summary__string@uuuuuuumuuu
+    },
+  ]
+}

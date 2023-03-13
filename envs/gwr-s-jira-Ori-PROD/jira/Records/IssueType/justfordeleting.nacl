@@ -1,0 +1,6 @@
+jira.IssueType justfordeleting {
+  description = ""
+  name = "justfordeleting"
+  untranslatedName = "justfordeleting"
+  hierarchyLevel = 0
+}

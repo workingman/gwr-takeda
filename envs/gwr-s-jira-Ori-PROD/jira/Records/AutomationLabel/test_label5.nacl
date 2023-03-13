@@ -1,0 +1,4 @@
+jira.AutomationLabel test_label5@s {
+  name = "test label5"
+  color = "G300"
+}

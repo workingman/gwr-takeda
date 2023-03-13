@@ -1,0 +1,37 @@
+jira.Project usersTest {
+  key = "LNCMAAA"
+  description = ""
+  name = "usersTest"
+  projectTypeKey = "software"
+  workflowScheme = jira.WorkflowScheme.instance.1801BugWorkflowScheme4
+  permissionScheme = jira.PermissionScheme.instance.AlonPermissionScheme
+  notificationScheme = jira.NotificationScheme.instance.Default_Notification_Scheme@s
+  issueSecurityScheme = jira.SecurityScheme.instance.name
+  issueTypeScreenScheme = jira.IssueTypeScreenScheme.instance.test
+  issueTypeScheme = jira.IssueTypeScheme.instance.Default_Issue_Type_Scheme@s
+  fieldConfigurationScheme = jira.FieldConfigurationScheme.instance.test
+  leadAccountId = {
+    id = "5fa91999b2633d0076583a61"
+    displayName = "Alon Stern"
+  }
+  _generated_dependencies = [
+    {
+      reference = jira.FieldConfigurationItem.instance.Custom_field_config2_s_Affected_hardware__textfield__c_suuuu@uumuuuuuum
+    },
+    {
+      reference = jira.FieldConfigurationItem.instance.Custom_field_config2_s_Product_categorization__cascadingselect__c_suuuu@uumuuuuuum
+    },
+    {
+      reference = jira.FieldConfigurationItem.instance.Custom_field_config_s_Affected_hardware__textfield__c_suuuu@uumuuuuuum
+    },
+    {
+      reference = jira.FieldConfigurationItem.instance.Custom_field_config_s_Product_categorization__cascadingselect__c_suuuu@uumuuuuuum
+    },
+    {
+      reference = jira.FieldConfigurationItem.instance.Jira_Service_Management_Field_Configuration_for_Project_IP_s_Affected_hardware__textfield__c_suuuu@uuuuuuumuuuuuum
+    },
+    {
+      reference = jira.FieldConfigurationItem.instance.Jira_Service_Management_Field_Configuration_for_Project_IP_s_Product_categorization__cascadingselect__c_suuuu@uuuuuuumuuuuuum
+    },
+  ]
+}

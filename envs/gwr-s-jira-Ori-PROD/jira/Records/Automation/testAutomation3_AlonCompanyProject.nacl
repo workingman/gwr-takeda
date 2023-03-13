@@ -1,0 +1,144 @@
+jira.Automation testAutomation3_AlonCompanyProject {
+  name = "testAutomation3"
+  state = "DISABLED"
+  description = "desc2"
+  authorAccountId = {
+    id = "5fa91999b2633d0076583a61"
+    displayName = "Alon Stern"
+  }
+  actor = {
+    type = "ACCOUNT_ID"
+    value = {
+      id = "557058:f58131cb-b67d-43c7-b30d-6b58d40bd077"
+      displayName = "Automation for Jira"
+    }
+  }
+  trigger = {
+    component = "TRIGGER"
+    schemaVersion = 1
+    type = "jira.approval.completed.trigger"
+    children = [
+    ]
+    conditions = [
+    ]
+  }
+  components = [
+    {
+      component = "ACTION"
+      schemaVersion = 1
+      type = "jira.issue.comment.update"
+      value = {
+        commentId = {
+          type = "REFERENCE"
+          value = "LAST_COMMENT"
+        }
+        comment = "asd"
+        sendNotifications = true
+        editVisibility = false
+      }
+      children = [
+      ]
+      conditions = [
+      ]
+    },
+    {
+      component = "CONDITION"
+      schemaVersion = 1
+      type = "jira.comparator.condition"
+      value = {
+        first = "a"
+        second = "a"
+        operator = "EQUALS"
+      }
+      children = [
+      ]
+      conditions = [
+      ]
+    },
+    {
+      component = "ACTION"
+      schemaVersion = 1
+      type = "jira.issue.comment.update"
+      value = {
+        commentId = {
+          type = "REFERENCE"
+          value = "LAST_COMMENT"
+        }
+        comment = "asd"
+        sendNotifications = true
+        editVisibility = false
+      }
+      children = [
+      ]
+      conditions = [
+      ]
+    },
+    {
+      component = "ACTION"
+      schemaVersion = 10
+      type = "jira.issue.transition"
+      value = {
+        operations = [
+          {
+            field = {
+              type = "ID"
+              value = jira.Field.instance.Assignee__user
+            }
+            fieldType = "assignee"
+            type = "SET"
+            value = {
+              type = "CLEAR"
+              value = "clear"
+            }
+          },
+        ]
+        advancedFields = '''
+{
+    "update": {
+        "comment": [
+            {
+                "add": {
+                    "body": "Thanks for raising {{key}}!."
+                }
+            }
+        ]
+    },
+    "fields": {
+        "resolution": {
+            "name": "Fixed"
+        }
+    }
+}
+'''
+        sendNotifications = true
+        destinationStatus = {
+          type = "COPY"
+          value = "parent"
+        }
+        transitionMatch = ""
+      }
+      children = [
+      ]
+      conditions = [
+      ]
+    },
+  ]
+  canOtherRuleTrigger = true
+  notifyOnError = "EVERYERROR"
+  projects = [
+    {
+      projectId = jira.Project.instance.AlonCompanyProject
+    },
+  ]
+  labels = [
+  ]
+  tags = [
+    {
+      tagType = "IS_RULE_UPDATED"
+      tagValue = "true"
+    },
+  ]
+  writeAccessType = "UNRESTRICTED"
+  collaborators = [
+  ]
+}

@@ -1,0 +1,6 @@
+jira.IssueType Bug3 {
+  description = "A problem or error.2"
+  name = "Bug3"
+  untranslatedName = "Bug3"
+  hierarchyLevel = 0
+}

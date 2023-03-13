@@ -1,0 +1,39 @@
+jira.Board TSTFLDCNFG_board@s {
+  name = "TSTFLDCNFG board"
+  type = "simple"
+  admins = {
+    users = [
+      {
+        id = "5fa91999b2633d0076583a61"
+        displayName = "Alon Stern"
+      },
+    ]
+  }
+  location = {
+    projectId = jira.Project.instance.testFieldConfigScheme
+  }
+  filterId = "10066"
+  columnConfig = {
+    columns = [
+      {
+        name = "To Do"
+        statuses = [
+          "10168",
+        ]
+      },
+      {
+        name = "In Progress"
+        statuses = [
+          "10169",
+        ]
+      },
+      {
+        name = "Done"
+        statuses = [
+          "10170",
+        ]
+      },
+    ]
+    constraintType = "none"
+  }
+}

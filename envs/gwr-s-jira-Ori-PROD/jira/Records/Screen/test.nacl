@@ -1,0 +1,20 @@
+jira.Screen test {
+  name = "test"
+  description = ""
+  tabs = {
+    Field_Tab@s = {
+      name = "Field Tab"
+      fields = [
+        jira.Field.instance.Affected_hardware__textfield__c@suuuu,
+      ]
+      position = 0
+    }
+    tab2 = {
+      name = "tab2"
+      fields = [
+        jira.Field.instance.Product_categorization__cascadingselect__c@suuuu,
+      ]
+      position = 1
+    }
+  }
+}

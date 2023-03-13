@@ -1,0 +1,10 @@
+jira.IssueTypeScreenScheme test {
+  name = "test"
+  description = ""
+  issueTypeMappings = [
+    {
+      issueTypeId = "default"
+      screenSchemeId = jira.ScreenScheme.instance.test
+    },
+  ]
+}

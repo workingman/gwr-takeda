@@ -1,0 +1,126 @@
+jira.Project BUG1 {
+  key = "BUG1"
+  description = ""
+  name = "BUG1"
+  projectTypeKey = "software"
+  workflowScheme = jira.WorkflowScheme.instance.BUG1__Software_Simplified_Workflow_Scheme@fssss
+  permissionScheme = jira.PermissionScheme.instance.Default_software_scheme@s
+  notificationScheme = jira.NotificationScheme.instance.Default_Notification_Scheme@s
+  issueTypeScreenScheme = jira.IssueTypeScreenScheme.instance.BUG1__Software_Development_Issue_Type_Screen_Scheme@fssssss
+  issueTypeScheme = jira.IssueTypeScheme.instance.BUG1__Software_Development_Issue_Type_Scheme@fsssss
+  fieldConfigurationScheme = jira.FieldConfigurationScheme.instance.A_new_FCS@s
+  leadAccountId = {
+    id = "5b8ed5177a33352bf10f7a48"
+    displayName = "Lior Neudorfer"
+  }
+  _generated_dependencies = [
+    {
+      reference = jira.FieldConfigurationItem.instance.Copy_of_Default_Field_Configuration_for_BUGS_s_Affects_versions__array_suu@uuuuuumuuuum
+    },
+    {
+      reference = jira.FieldConfigurationItem.instance.Copy_of_Default_Field_Configuration_for_BUGS_s_Assignee__user@uuuuuumuuu
+    },
+    {
+      reference = jira.FieldConfigurationItem.instance.Copy_of_Default_Field_Configuration_for_BUGS_s_Attachment__array@uuuuuumuuu
+    },
+    {
+      reference = jira.FieldConfigurationItem.instance.Copy_of_Default_Field_Configuration_for_BUGS_s_Backout_plan__textarea__c_suuuu@uuuuuumuuuuuum
+    },
+    {
+      reference = jira.FieldConfigurationItem.instance.Copy_of_Default_Field_Configuration_for_BUGS_s_Components__array@uuuuuumuuu
+    },
+    {
+      reference = jira.FieldConfigurationItem.instance.Copy_of_Default_Field_Configuration_for_BUGS_s_Description__string@uuuuuumuuu
+    },
+    {
+      reference = jira.FieldConfigurationItem.instance.Copy_of_Default_Field_Configuration_for_BUGS_s_Due_date__date_suu@uuuuuumuuuum
+    },
+    {
+      reference = jira.FieldConfigurationItem.instance.Copy_of_Default_Field_Configuration_for_BUGS_s_Environment__string@uuuuuumuuu
+    },
+    {
+      reference = jira.FieldConfigurationItem.instance.Copy_of_Default_Field_Configuration_for_BUGS_s_Fix_versions__array_suu@uuuuuumuuuum
+    },
+    {
+      reference = jira.FieldConfigurationItem.instance.Copy_of_Default_Field_Configuration_for_BUGS_s_How_many_times_has_this_happened_before__float__c_ssssssuuuu@uuuuuumuuuuuuuuuuum
+    },
+    {
+      reference = jira.FieldConfigurationItem.instance.Copy_of_Default_Field_Configuration_for_BUGS_s_Issue_Type__issuetype_suu@uuuuuumuuuum
+    },
+    {
+      reference = jira.FieldConfigurationItem.instance.Copy_of_Default_Field_Configuration_for_BUGS_s_Labels__array@uuuuuumuuu
+    },
+    {
+      reference = jira.FieldConfigurationItem.instance.Copy_of_Default_Field_Configuration_for_BUGS_s_Linked_Issues__array_suu@uuuuuumuuuum
+    },
+    {
+      reference = jira.FieldConfigurationItem.instance.Copy_of_Default_Field_Configuration_for_BUGS_s_Priority__priority@uuuuuumuuu
+    },
+    {
+      reference = jira.FieldConfigurationItem.instance.Copy_of_Default_Field_Configuration_for_BUGS_s_Reporter__user@uuuuuumuuu
+    },
+    {
+      reference = jira.FieldConfigurationItem.instance.Copy_of_Default_Field_Configuration_for_BUGS_s_Security_Level__securitylevel_suu@uuuuuumuuuum
+    },
+    {
+      reference = jira.FieldConfigurationItem.instance.Copy_of_Default_Field_Configuration_for_BUGS_s_Summary__string@uuuuuumuuu
+    },
+    {
+      reference = jira.FieldConfigurationItem.instance.Copy_of_Default_Field_Configuration_for_BUGS_s_Time_tracking__timetracking_suu@uuuuuumuuuum
+    },
+    {
+      reference = jira.FieldConfigurationItem.instance.Default_Field_Configuration_s_Affects_versions__array_suu@uumuuuum
+    },
+    {
+      reference = jira.FieldConfigurationItem.instance.Default_Field_Configuration_s_Assignee__user@uumuuu
+    },
+    {
+      reference = jira.FieldConfigurationItem.instance.Default_Field_Configuration_s_Attachment__array@uumuuu
+    },
+    {
+      reference = jira.FieldConfigurationItem.instance.Default_Field_Configuration_s_Backout_plan__textarea__c_suuuu@uumuuuuuum
+    },
+    {
+      reference = jira.FieldConfigurationItem.instance.Default_Field_Configuration_s_Components__array@uumuuu
+    },
+    {
+      reference = jira.FieldConfigurationItem.instance.Default_Field_Configuration_s_Description__string@uumuuu
+    },
+    {
+      reference = jira.FieldConfigurationItem.instance.Default_Field_Configuration_s_Due_date__date_suu@uumuuuum
+    },
+    {
+      reference = jira.FieldConfigurationItem.instance.Default_Field_Configuration_s_Environment__string@uumuuu
+    },
+    {
+      reference = jira.FieldConfigurationItem.instance.Default_Field_Configuration_s_Fix_versions__array_suu@uumuuuum
+    },
+    {
+      reference = jira.FieldConfigurationItem.instance.Default_Field_Configuration_s_How_many_times_has_this_happened_before__float__c_ssssssuuuu@uumuuuuuuuuuuum
+    },
+    {
+      reference = jira.FieldConfigurationItem.instance.Default_Field_Configuration_s_Issue_Type__issuetype_suu@uumuuuum
+    },
+    {
+      reference = jira.FieldConfigurationItem.instance.Default_Field_Configuration_s_Labels__array@uumuuu
+    },
+    {
+      reference = jira.FieldConfigurationItem.instance.Default_Field_Configuration_s_Linked_Issues__array_suu@uumuuuum
+    },
+    {
+      reference = jira.FieldConfigurationItem.instance.Default_Field_Configuration_s_Priority__priority@uumuuu
+    },
+    {
+      reference = jira.FieldConfigurationItem.instance.Default_Field_Configuration_s_Reporter__user@uumuuu
+    },
+    {
+      reference = jira.FieldConfigurationItem.instance.Default_Field_Configuration_s_Security_Level__securitylevel_suu@uumuuuum
+    },
+    {
+      reference = jira.FieldConfigurationItem.instance.Default_Field_Configuration_s_Summary__string@uumuuu
+    },
+    {
+      reference = jira.FieldConfigurationItem.instance.Default_Field_Configuration_s_Time_tracking__timetracking_suu@uumuuuum
+    },
+  ]
+}

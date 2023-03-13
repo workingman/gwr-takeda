@@ -1,0 +1,5 @@
+jira.Status first {
+  name = "first"
+  statusCategory = jira.StatusCategory.instance.To_Do@s
+  description = ""
+}

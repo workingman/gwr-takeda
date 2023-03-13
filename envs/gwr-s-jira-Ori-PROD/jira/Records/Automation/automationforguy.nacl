@@ -1,0 +1,72 @@
+jira.Automation automationforguy {
+  name = "automationforguy"
+  state = "ENABLED"
+  description = ""
+  authorAccountId = {
+    id = "60a60ff79b362f006919d5ff"
+    displayName = "Guy Hamo"
+  }
+  actor = {
+    type = "ACCOUNT_ID"
+    value = {
+      id = "557058:f58131cb-b67d-43c7-b30d-6b58d40bd077"
+      displayName = "Automation for Jira"
+    }
+  }
+  trigger = {
+    component = "TRIGGER"
+    schemaVersion = 2
+    type = "jira.issue.field.changed"
+    value = {
+      changeType = "VALUE_DELETED"
+      fields = [
+        {
+          value = jira.Field.instance.guytest__float__c.name
+          type = "fieldName"
+        },
+      ]
+      actions = [
+      ]
+    }
+    children = [
+    ]
+    conditions = [
+    ]
+  }
+  components = [
+    {
+      component = "ACTION"
+      schemaVersion = 10
+      type = "jira.issue.edit"
+      value = {
+        operations = [
+          {
+            field = {
+              type = "ID"
+              value = jira.Field.instance.Description__string
+            }
+            fieldType = "description"
+            type = "SET"
+            rawValue = "dsdsdsds"
+          },
+        ]
+        sendNotifications = true
+      }
+      children = [
+      ]
+      conditions = [
+      ]
+    },
+  ]
+  canOtherRuleTrigger = false
+  notifyOnError = "FIRSTERROR"
+  projects = [
+  ]
+  labels = [
+  ]
+  tags = [
+  ]
+  writeAccessType = "UNRESTRICTED"
+  collaborators = [
+  ]
+}

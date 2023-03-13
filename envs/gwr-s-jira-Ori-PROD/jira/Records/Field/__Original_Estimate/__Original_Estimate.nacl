@@ -1,0 +1,8 @@
+jira.Field __Original_Estimate__number@_00931ssuu {
+  name = "Σ Original Estimate"
+  schema = {
+    type = "number"
+    system = "aggregatetimeoriginalestimate"
+  }
+  description = ""
+}

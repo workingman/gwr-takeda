@@ -1,0 +1,4 @@
+jira.AutomationLabel new_shay@s {
+  name = "new shay"
+  color = "G500"
+}

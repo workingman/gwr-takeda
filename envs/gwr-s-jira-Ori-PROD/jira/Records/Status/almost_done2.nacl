@@ -1,0 +1,5 @@
+jira.Status almost_done2@s {
+  name = "almost done2"
+  statusCategory = jira.StatusCategory.instance.In_Progress@s
+  description = "This is almost done"
+}

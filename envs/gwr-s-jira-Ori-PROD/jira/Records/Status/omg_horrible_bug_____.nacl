@@ -1,0 +1,5 @@
+jira.Status omg_horrible_bug_____@ssls_01488_01493_01497 {
+  name = "OMG Horrible Bug! אוי"
+  statusCategory = jira.StatusCategory.instance.To_Do@s
+  description = ""
+}

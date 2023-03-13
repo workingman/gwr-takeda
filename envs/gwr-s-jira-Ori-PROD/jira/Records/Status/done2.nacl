@@ -1,0 +1,5 @@
+jira.Status done2 {
+  name = "Done2"
+  statusCategory = jira.StatusCategory.instance.Done
+  description = "a new description for Done"
+}

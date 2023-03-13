@@ -1,0 +1,8 @@
+jira.Field Due_date__date@suu {
+  name = "Due date"
+  schema = {
+    type = "date"
+    system = "duedate"
+  }
+  description = ""
+}

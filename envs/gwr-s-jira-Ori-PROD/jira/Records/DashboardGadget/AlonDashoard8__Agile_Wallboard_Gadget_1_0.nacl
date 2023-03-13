@@ -1,0 +1,23 @@
+jira.DashboardGadget AlonDashoard8__Agile_Wallboard_Gadget_1_0@uussuu {
+  uri = "rest/gadgets/1.0/g/com.pyxis.greenhopper.jira:greenhopper-gadget-rapid-view/gadgets/greenhopper-rapid-view.xml"
+  color = "red"
+  position = {
+    row = 0
+    column = 1
+  }
+  title = "Agile Wallboard Gadget"
+  properties = {
+    config = {
+      "" = "false"
+      isConfigured = "true"
+      rapidViewId = "1"
+      showRapidViewName = "true"
+      quickFilters = "none"
+      refresh = "15"
+      showQuickFilterNames = "false"
+    }
+  }
+  _parent = [
+    jira.Dashboard.instance.AlonDashoard8,
+  ]
+}

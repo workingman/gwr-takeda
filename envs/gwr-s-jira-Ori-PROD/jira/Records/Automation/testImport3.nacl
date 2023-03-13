@@ -1,0 +1,221 @@
+jira.Automation testImport3 {
+  name = "testImport3"
+  state = "DISABLED"
+  description = "test 3"
+  authorAccountId = {
+    id = "5fa91999b2633d0076583a61"
+    displayName = "Alon Stern"
+  }
+  actor = {
+    type = "ACCOUNT_ID"
+    value = {
+      id = "557058:f58131cb-b67d-43c7-b30d-6b58d40bd077"
+      displayName = "Automation for Jira"
+    }
+  }
+  trigger = {
+    component = "TRIGGER"
+    schemaVersion = 2
+    type = "jira.issue.field.changed"
+    value = {
+      changeType = "VALUE_ADDED"
+      fields = [
+        {
+          value = jira.Field.instance.Components__array.name
+          type = "field"
+        },
+      ]
+      actions = [
+        "create",
+      ]
+    }
+    children = [
+    ]
+    conditions = [
+    ]
+  }
+  components = [
+    {
+      component = "BRANCH"
+      schemaVersion = 1
+      type = "jira.issue.related"
+      value = {
+        relatedType = "parent"
+        jql = ""
+        linkTypes = [
+        ]
+        onlyUpdatedIssues = false
+        similarityLimit = 40
+        compareValue = 0
+      }
+      children = [
+        {
+          component = "CONDITION"
+          schemaVersion = 3
+          type = "jira.issue.condition"
+          value = {
+            selectedField = {
+              type = "ID"
+              value = jira.Field.instance.Status__status.name
+            }
+            selectedFieldType = "status"
+            comparison = "ONE_OF"
+            compareFieldValue = {
+              type = "NAME"
+              multiValue = true
+              values = [
+                jira.Status.instance.approved.name,
+              ]
+            }
+          }
+          children = [
+          ]
+          conditions = [
+          ]
+        },
+        {
+          component = "CONDITION"
+          schemaVersion = 1
+          type = "jira.jql.condition"
+          children = [
+          ]
+          conditions = [
+          ]
+          rawValue = "${ jira.Field.instance.Priority__priority } > ${ jira.Priority.instance.Medium.name }"
+        },
+        {
+          component = "ACTION"
+          schemaVersion = 10
+          type = "jira.issue.create"
+          value = {
+            operations = [
+              {
+                field = {
+                  type = "ID"
+                  value = jira.Field.instance.Summary__string.name
+                }
+                fieldType = "summary"
+                type = "SET"
+                rawValue = "value"
+              },
+              {
+                field = {
+                  type = "ID"
+                  value = jira.Field.instance.Description__string.name
+                }
+                fieldType = "description"
+                type = "SET"
+                rawValue = "descruotuib"
+              },
+              {
+                field = {
+                  type = "ID"
+                  value = jira.Field.instance.Project__project.name
+                }
+                fieldType = "project"
+                type = "SET"
+                value = {
+                  value = "current"
+                  type = "COPY"
+                }
+              },
+              {
+                field = {
+                  type = "ID"
+                  value = jira.Field.instance.Issue_Type__issuetype@suu.name
+                }
+                fieldType = "issuetype"
+                type = "SET"
+                value = {
+                  type = "COPY"
+                  value = "current"
+                }
+              },
+            ]
+            sendNotifications = false
+          }
+          children = [
+          ]
+          conditions = [
+          ]
+        },
+      ]
+      conditions = [
+      ]
+    },
+    {
+      component = "ACTION"
+      schemaVersion = 10
+      type = "jira.issue.create"
+      value = {
+        operations = [
+          {
+            field = {
+              type = "ID"
+              value = jira.Field.instance.Summary__string.name
+            }
+            fieldType = "summary"
+            type = "SET"
+            rawValue = "value"
+          },
+          {
+            field = {
+              type = "ID"
+              value = jira.Field.instance.Description__string.name
+            }
+            fieldType = "description"
+            type = "SET"
+            rawValue = "description"
+          },
+          {
+            field = {
+              type = "ID"
+              value = jira.Field.instance.Project__project.name
+            }
+            fieldType = "project"
+            type = "SET"
+            value = {
+              value = "current"
+              type = "COPY"
+            }
+          },
+          {
+            field = {
+              type = "ID"
+              value = jira.Field.instance.Issue_Type__issuetype@suu.name
+            }
+            fieldType = "issuetype"
+            type = "SET"
+            value = {
+              type = "COPY"
+              value = "current"
+            }
+          },
+        ]
+        sendNotifications = false
+      }
+      children = [
+      ]
+      conditions = [
+      ]
+    },
+  ]
+  canOtherRuleTrigger = false
+  notifyOnError = "FIRSTERROR"
+  projects = [
+    {
+      projectTypeKey = "business"
+    },
+  ]
+  labels = [
+  ]
+  tags = [
+    {
+      tagType = "IS_RULE_UPDATED"
+      tagValue = "true"
+    },
+  ]
+  writeAccessType = "UNRESTRICTED"
+  collaborators = [
+  ]
+}

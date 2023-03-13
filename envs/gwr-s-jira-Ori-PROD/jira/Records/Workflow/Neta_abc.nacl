@@ -1,0 +1,140 @@
+jira.Workflow Neta_abc@s {
+  description = ""
+  transitions = [
+    {
+      name = "Create"
+      description = ""
+      to = jira.Status.instance.open
+      type = "initial"
+      rules = {
+        validators = [
+          {
+            type = "PermissionValidator"
+            configuration = {
+              permissionKey = "CREATE_ISSUES"
+            }
+          },
+        ]
+        postFunctions = [
+          {
+            type = "FireIssueEventFunction"
+            configuration = {
+              event = {
+                id = jira.IssueEvent.instance.Issue_Created@s
+              }
+            }
+          },
+        ]
+      }
+      properties = [
+        {
+          key = "jira.issue.editable"
+          value = "true"
+        },
+      ]
+    },
+    {
+      name = "x"
+      description = ""
+      from = [
+        jira.Status.instance.open,
+      ]
+      to = jira.Status.instance.in_progress@s
+      type = "directed"
+      rules = {
+        postFunctions = [
+          {
+            type = "FireIssueEventFunction"
+            configuration = {
+              event = {
+                id = jira.IssueEvent.instance.Generic_Event@s
+              }
+            }
+          },
+          {
+            type = "com.onresolve.jira.groovy.groovyrunner__script-postfunction"
+            configuration = {
+              value = "eyJjb21wcmVzc2VkIjpbMzEsMTM5LDgsMCwwLDAsMCwwLDAsMyw4NSwxNDMsMjA1LDExMCwxOTQsNDgsMTYsMTMyLDIyMywxOTcsMjMxLDE5OCwzNCwxNiwyMjUsMjA4LDkxLDUsMjMsNDYsMTI5LDY3LDEyMywxNzQsNTQsMTg3LDI3LDIwMSwxOTQsMTc3LDM1LDI1NSwwLDE4LDIzNCwxODcsMTE5LDE5LDgwLDE2NSwzMCwyMzEsMjExLDIwNCwyMzYsMjM2LDY3LDE2MSwxMzEsMTQ4LDU4LDI0LDg5LDE4OSw0MywxMiwxNjMsNiwxMzAsNDEsMTk1LDIxMywxNjYsMTcyLDgzLDIxMiwyMzIsNjYsMzMsMTI1LDExLDI0MSw1MCwxODQsMTEyLDIxMSwxNTksMTcsMTI0LDE3OCwyMTcsNiwxMjcsMTM0LDIwMCw2MiwxNzEsNTUsODUsMTM4LDM3LDEzNyw2NiwyMjEsMTc1LDE3NiwyMjIsODAsNTMsMjQ0LDIwNSwxNzQsMTA2LDIxNCwxMTcsOTEsMjM3LDAsMTg1LDIxOCw1NCwxMDIsMzIsOTksMjE0LDQzLDEwOCw4MSwyMjAsMjM2LDE2MSwxMTksNDQsMTI5LDI4LDExLDEzOSwxODgsNTEsMTUwLDE4NSwyMzgsNDMsMTEzLDE0OCwxNTAsMTQzLDE5NSwyMjUsMjUxLDIxMiwxMzcsMTUsMTMxLDE2NywyMjksMTQyLDY0LDE0NSwxOTYsOSwxNjMsMTU3LDk0LDAsMCwxMzIsMSw2MSwyOSwyMjQsMjQ2LDEyOSwyNDgsMjMzLDE0Nyw3LDE5OCwxMjEsMjE0LDM0LDI0MiwyMjMsMjE2LDIyNywxODgsMjA4LDE1MiwxMjcsMjM2LDI0NSwxNzgsMjUwLDI0OSw1LDI1LDIwNSwxNDUsMTkxLDMsMSwwLDBdfQ=="
+            }
+          },
+        ]
+      }
+      properties = [
+        {
+          key = "jira.issue.editable"
+          value = "true"
+        },
+      ]
+    },
+    {
+      name = "x"
+      description = ""
+      from = [
+        jira.Status.instance.in_progress@s,
+      ]
+      to = jira.Status.instance.open
+      type = "directed"
+      rules = {
+        postFunctions = [
+          {
+            type = "FireIssueEventFunction"
+            configuration = {
+              event = {
+                id = jira.IssueEvent.instance.Generic_Event@s
+              }
+            }
+          },
+        ]
+      }
+      properties = [
+        {
+          key = "jira.issue.editable"
+          value = "true"
+        },
+      ]
+    },
+  ]
+  statuses = [
+    {
+      id = jira.Status.instance.in_progress@s
+      name = "a"
+      properties = [
+        {
+          key = "jira.issue.editable"
+          value = "true"
+        },
+      ]
+    },
+    {
+      id = jira.Status.instance.open
+      name = "Open"
+      properties = [
+        {
+          key = "jira.issue.editable"
+          value = "true"
+        },
+      ]
+    },
+    {
+      id = jira.Status.instance.reopened
+      name = "c"
+      properties = [
+        {
+          key = "jira.issue.editable"
+          value = "true"
+        },
+      ]
+    },
+    {
+      id = jira.Status.instance.resolved
+      name = "d"
+      properties = [
+        {
+          key = "jira.issue.editable"
+          value = "true"
+        },
+      ]
+    },
+  ]
+  name = "Neta abc"
+}

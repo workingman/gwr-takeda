@@ -1,0 +1,10 @@
+jira.Screen testScreen {
+  name = "testScreen"
+  description = ""
+  tabs = {
+    Field_Tab@s = {
+      name = "Field Tab"
+      position = 0
+    }
+  }
+}

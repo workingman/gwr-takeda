@@ -1,0 +1,39 @@
+jira.Board test_board@s {
+  name = "test board"
+  type = "simple"
+  admins = {
+    users = [
+      {
+        id = "5fa91999b2633d0076583a61"
+        displayName = "Alon Stern"
+      },
+    ]
+  }
+  location = {
+    projectId = jira.Project.instance.AlonProject
+  }
+  filterId = "10009"
+  columnConfig = {
+    columns = [
+      {
+        name = "To Do"
+        statuses = [
+          "10015",
+        ]
+      },
+      {
+        name = "In Progress"
+        statuses = [
+          "10016",
+        ]
+      },
+      {
+        name = "Done"
+        statuses = [
+          "10017",
+        ]
+      },
+    ]
+    constraintType = "none"
+  }
+}

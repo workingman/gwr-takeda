@@ -1,0 +1,4 @@
+jira.AutomationLabel jqlRules {
+  name = "jqlRules"
+  color = "B300"
+}

@@ -1,0 +1,8 @@
+jira.ProjectComponent process_control_project_b__Component_one@uumuus {
+  description = "the first component"
+  name = "Component one"
+  assigneeType = "PROJECT_LEAD"
+  _parent = [
+    jira.Project.instance.process_control_project@b,
+  ]
+}

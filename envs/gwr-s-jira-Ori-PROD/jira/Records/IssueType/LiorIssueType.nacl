@@ -1,0 +1,6 @@
+jira.IssueType LiorIssueType {
+  description = "MyIssueType!1"
+  name = "LiorIssueType"
+  untranslatedName = "LiorIssueType"
+  hierarchyLevel = 0
+}

@@ -1,0 +1,105 @@
+jira.Automation JqlAutomation3_AlonCompanyProject {
+  name = "JqlAutomation3"
+  state = "ENABLED"
+  description = "asd2"
+  authorAccountId = {
+    id = "616e3f77e79ff6006f1eca7f"
+    displayName = "Shir Reifenberg"
+  }
+  actor = {
+    type = "ACCOUNT_ID"
+    value = {
+      id = "557058:f58131cb-b67d-43c7-b30d-6b58d40bd077"
+      displayName = "Automation for Jira"
+    }
+  }
+  trigger = {
+    component = "TRIGGER"
+    schemaVersion = 1
+    type = "jira.jql.scheduled"
+    value = {
+      schedule = {
+        cronExpression = ""
+        method = "BASIC"
+        rate = 0
+        rateInterval = 86400
+        rRule = '''
+BEGIN:VEVENT
+DTSTART;TZID=Asia/Jerusalem:20220818T210406
+RRULE:FREQ=MONTHLY;INTERVAL=1;BYHOUR=9;BYMINUTE=0;BYSECOND=0;BYMONTHDAY=1
+END:VEVENT
+
+'''
+      }
+      jql = "${ jira.Field.instance.Priority__priority } in ('${ jira.Priority.instance.Low.name }','${ jira.Priority.instance.Medium.name }','${ jira.Priority.instance.High.name }')"
+      executionMode = "jql"
+      onlyUpdatedIssues = true
+    }
+    children = [
+    ]
+    conditions = [
+    ]
+  }
+  components = [
+    {
+      component = "CONDITION"
+      schemaVersion = 1
+      type = "jira.issues.related.condition"
+      value = {
+        relatedType = "jql"
+        linkTypes = [
+        ]
+        operator = "allmatch"
+        relatedJql = "statusCategory != Done"
+        compareJql = "${ jira.Field.instance.Priority__priority } > ${ jira.Priority.instance.Medium.name }"
+        compareValue = 0
+        similarityLimit = 40
+        jql = "statusCategory != Done"
+      }
+      children = [
+      ]
+      conditions = [
+      ]
+    },
+    {
+      component = "ACTION"
+      schemaVersion = 1
+      type = "jira.lookup.issues"
+      value = {
+        id = "_customsmartvalue_id_166080756221912124"
+        name = {
+          type = "FREE"
+          value = "lookupIssues"
+        }
+        type = "JQL"
+        query = {
+          type = "SMART"
+          value = "statusCategory = 'To Do'"
+        }
+        lazy = false
+      }
+      children = [
+      ]
+      conditions = [
+      ]
+    },
+  ]
+  canOtherRuleTrigger = false
+  notifyOnError = "FIRSTERROR"
+  projects = [
+    {
+      projectId = jira.Project.instance.AlonCompanyProject
+    },
+  ]
+  labels = [
+  ]
+  tags = [
+    {
+      tagType = "IS_RULE_UPDATED"
+      tagValue = "true"
+    },
+  ]
+  writeAccessType = "UNRESTRICTED"
+  collaborators = [
+  ]
+}

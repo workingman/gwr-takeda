@@ -1,0 +1,86 @@
+jira.Automation shay_test_rule_BUG1_AlonProjecta2_AlonProject@ssuuu {
+  name = "shay test rule"
+  state = "ENABLED"
+  description = ""
+  authorAccountId = {
+    id = "62ebc187e50f2f2a395557cc"
+    displayName = "Shay Cohen"
+  }
+  actor = {
+    type = "ACCOUNT_ID"
+    value = {
+      id = "557058:f58131cb-b67d-43c7-b30d-6b58d40bd077"
+      displayName = "Automation for Jira"
+    }
+  }
+  trigger = {
+    component = "TRIGGER"
+    schemaVersion = 2
+    type = "jira.issue.field.changed"
+    value = {
+      changeType = "ANY_CHANGE"
+      fields = [
+        {
+          value = jira.Field.instance.Assignee__user
+          type = "field"
+        },
+        {
+          value = jira.Field.instance.Attachment__array
+          type = "field"
+        },
+      ]
+      actions = [
+        "create",
+        "transition",
+        "edit",
+        "assign",
+      ]
+    }
+    children = [
+    ]
+    conditions = [
+    ]
+  }
+  components = [
+    {
+      component = "ACTION"
+      schemaVersion = 3
+      type = "jira.issue.assign"
+      value = {
+        assignType = "SPECIFY_USER"
+        assignee = {
+          type = "SMART"
+          value = "{{issue.reporter}}"
+        }
+        excludedUsers = [
+        ]
+        userList = [
+        ]
+      }
+      children = [
+      ]
+      conditions = [
+      ]
+    },
+  ]
+  canOtherRuleTrigger = false
+  notifyOnError = "FIRSTERROR"
+  projects = [
+    {
+      projectId = jira.Project.instance.BUG1
+    },
+    {
+      projectId = jira.Project.instance.AlonProjecta2
+    },
+    {
+      projectId = jira.Project.instance.AlonProject
+    },
+  ]
+  labels = [
+  ]
+  tags = [
+  ]
+  writeAccessType = "UNRESTRICTED"
+  collaborators = [
+  ]
+}

@@ -1,0 +1,246 @@
+jira.Workflow Copy_of_Lior_s_Test_Workflow@sstss {
+  description = "5"
+  transitions = [
+    {
+      name = "AnotherTestTransition"
+      description = ""
+      from = [
+        jira.Status.instance.approved,
+      ]
+      to = jira.Status.instance.approved
+      type = "directed"
+      rules = {
+        postFunctions = [
+          {
+            type = "FireIssueEventFunction"
+            configuration = {
+              event = {
+                id = jira.IssueEvent.instance.Generic_Event@s
+              }
+            }
+          },
+        ]
+      }
+      properties = [
+        {
+          key = "jira.issue.editable"
+          value = "true"
+        },
+      ]
+    },
+    {
+      name = "BackLogToSharedStatus"
+      description = ""
+      from = [
+        jira.Status.instance.backlog,
+      ]
+      to = jira.Status.instance.a_shared_status3@s
+      type = "directed"
+      rules = {
+        postFunctions = [
+          {
+            type = "FireIssueEventFunction"
+            configuration = {
+              event = {
+                id = jira.IssueEvent.instance.Generic_Event@s
+              }
+            }
+          },
+        ]
+      }
+      properties = [
+        {
+          key = "jira.issue.editable"
+          value = "true"
+        },
+      ]
+    },
+    {
+      name = "Build Broken"
+      description = ""
+      to = jira.Status.instance.build_broken@s
+      type = "global"
+      rules = {
+        postFunctions = [
+          {
+            type = "FireIssueEventFunction"
+            configuration = {
+              event = {
+                id = jira.IssueEvent.instance.Generic_Event@s
+              }
+            }
+          },
+        ]
+      }
+      properties = [
+        {
+          key = "jira.issue.editable"
+          value = "true"
+        },
+      ]
+    },
+    {
+      name = "Create"
+      description = ""
+      to = jira.Status.instance.open
+      type = "initial"
+      rules = {
+        validators = [
+          {
+            type = "PermissionValidator"
+            configuration = {
+              permissionKey = "CREATE_ISSUES"
+            }
+          },
+        ]
+        postFunctions = [
+          {
+            type = "FireIssueEventFunction"
+            configuration = {
+              event = {
+                id = jira.IssueEvent.instance.Issue_Created@s
+              }
+            }
+          },
+        ]
+      }
+      properties = [
+        {
+          key = "jira.issue.editable"
+          value = "true"
+        },
+      ]
+    },
+    {
+      name = "LiorTestTransition"
+      description = ""
+      from = [
+        jira.Status.instance.open,
+      ]
+      to = jira.Status.instance.build_broken@s
+      type = "directed"
+      rules = {
+        validators = [
+          {
+            type = "FieldRequiredValidator"
+            configuration = {
+              ignoreContext = false
+              errorMessage = ""
+              fieldIds = [
+                jira.Field.instance.Change_risk__select__c@suuuu,
+              ]
+            }
+          },
+          {
+            type = "com.onresolve.jira.groovy.groovyrunner__script-workflow-validators"
+            configuration = {
+              value = "{\"uuid\":\"bd1aaa25-00ad-49b5-9423-b03e425d8df4\",\"enabled\":true,\"description\":\"Lior Test ScriptRunner Validator \",\"expression\":\"!config['enabled'] ? true : (true)\",\"errorMessage\":\"A ScriptRunner Script Validator is preventing this transition, please contact your Jira admin for more information.\"}"
+            }
+          },
+          {
+            type = "com.onresolve.jira.groovy.groovyrunner__script-workflow-validators"
+            configuration = {
+              value = "{\"uuid\":\"8e4ba219-4715-495a-b854-203ba8ca2af5\",\"enabled\":true,\"description\":\"Another ScriptRunner validator\",\"expression\":\"!config['enabled'] ? true : (issue.getResolution() == \\\"Fixed\\\")\",\"errorMessage\":\"A ScriptRunner Script Validator is preventing this transition, please contact your Jira admin for more information.\"}"
+            }
+          },
+        ]
+        postFunctions = [
+          {
+            type = "FireIssueEventFunction"
+            configuration = {
+              event = {
+                id = jira.IssueEvent.instance.Generic_Event@s
+              }
+            }
+          },
+        ]
+      }
+      properties = [
+        {
+          key = "jira.issue.editable"
+          value = "true"
+        },
+      ]
+    },
+    {
+      name = "TransitionToSharedStatus"
+      description = ""
+      from = [
+        jira.Status.instance.a_shared_status3@s,
+      ]
+      to = jira.Status.instance.build_broken@s
+      type = "directed"
+      rules = {
+        postFunctions = [
+          {
+            type = "FireIssueEventFunction"
+            configuration = {
+              event = {
+                id = jira.IssueEvent.instance.Generic_Event@s
+              }
+            }
+          },
+        ]
+      }
+      properties = [
+        {
+          key = "jira.issue.editable"
+          value = "true"
+        },
+      ]
+    },
+  ]
+  statuses = [
+    {
+      id = jira.Status.instance.a_shared_status3@s
+      name = "A shared status"
+      properties = [
+        {
+          key = "jira.issue.editable"
+          value = "true"
+        },
+      ]
+    },
+    {
+      id = jira.Status.instance.approved
+      name = "Approved"
+      properties = [
+        {
+          key = "jira.issue.editable"
+          value = "true"
+        },
+      ]
+    },
+    {
+      id = jira.Status.instance.backlog
+      name = "Backlog"
+      properties = [
+        {
+          key = "jira.issue.editable"
+          value = "true"
+        },
+      ]
+    },
+    {
+      id = jira.Status.instance.build_broken@s
+      name = "Build Broken"
+      properties = [
+        {
+          key = "jira.issue.editable"
+          value = "true"
+        },
+      ]
+    },
+    {
+      id = jira.Status.instance.open
+      name = "Open"
+      properties = [
+        {
+          key = "jira.issue.editable"
+          value = "true"
+        },
+      ]
+    },
+  ]
+  name = "Copy of Lior's Test Workflow"
+}

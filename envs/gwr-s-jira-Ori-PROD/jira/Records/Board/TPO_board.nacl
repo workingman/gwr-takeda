@@ -1,0 +1,42 @@
+jira.Board TPO_board@s {
+  name = "TPO board"
+  type = "simple"
+  admins = {
+    users = [
+      {
+        id = "5cd027a783de300fe5d4b9b0"
+        displayName = "Ori Moisis"
+      },
+    ]
+  }
+  location = {
+    projectId = jira.Project.instance.test_proj_one@b
+  }
+  filterId = "10000"
+  columnConfig = {
+    columns = [
+      {
+        name = "To Do"
+        statuses = [
+          "10000",
+        ]
+      },
+      {
+        name = "In Progress"
+        statuses = [
+          "10001",
+        ]
+      },
+      {
+        name = "Done"
+        statuses = [
+          "10002",
+        ]
+      },
+    ]
+    constraintType = "none"
+  }
+  estimation = {
+    field = jira.Field.instance.Story_point_estimate__jsw_story_points__c@ssuubbuu
+  }
+}

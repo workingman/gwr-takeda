@@ -1,0 +1,190 @@
+jira.Automation shirsAutomation2_AlonCompanyProject {
+  name = "shirsAutomation2"
+  state = "ENABLED"
+  description = "some new description to test deploy"
+  authorAccountId = {
+    id = "616e3f77e79ff6006f1eca7f"
+    displayName = "Shir Reifenberg"
+  }
+  actor = {
+    type = "ACCOUNT_ID"
+    value = {
+      id = "557058:f58131cb-b67d-43c7-b30d-6b58d40bd077"
+      displayName = "Automation for Jira"
+    }
+  }
+  trigger = {
+    component = "TRIGGER"
+    schemaVersion = 2
+    type = "jira.issue.field.changed"
+    value = {
+      changeType = "ANY_CHANGE"
+      fields = [
+        {
+          value = jira.Field.instance.Priority__priority.name
+          type = "field"
+        },
+      ]
+      actions = [
+      ]
+    }
+    children = [
+    ]
+    conditions = [
+    ]
+  }
+  components = [
+    {
+      component = "CONDITION"
+      schemaVersion = 3
+      type = "jira.issue.condition"
+      value = {
+        selectedField = {
+          type = "NAME"
+          value = "GWR conflicting field"
+        }
+        selectedFieldType = "com.atlassian.jira.plugin.system.customfieldtypes:textfield"
+        comparison = "CONTAINS"
+        compareFieldValue = {
+          type = "FIELD_UNTRANSLATED_NAME"
+          value = "{\"type\":\"com.atlassian.jira.plugin.system.customfieldtypes:textarea\",\"name\":\"Root cause\"}"
+          multiValue = false
+          source = "current"
+        }
+      }
+      children = [
+      ]
+      conditions = [
+      ]
+    },
+    {
+      component = "CONDITION"
+      schemaVersion = 3
+      type = "jira.issue.condition"
+      value = {
+        selectedField = {
+          type = "ID"
+          value = jira.Field.instance.Issue_Type__issuetype@suu
+        }
+        selectedFieldType = "issuetype"
+        comparison = "NOT_EQUAL"
+        compareFieldValue = {
+          type = "ID"
+          value = jira.IssueType.instance.Bug3
+          multiValue = false
+        }
+      }
+      children = [
+      ]
+      conditions = [
+      ]
+    },
+    {
+      component = "ACTION"
+      schemaVersion = 3
+      type = "jira.issue.outgoing.email"
+      value = {
+        fromName = ""
+        replyTo = ""
+        to = [
+          {
+            type = "REFERENCE"
+            value = jira.Group.instance.site_admins@b
+            additional = "GROUP"
+          },
+          {
+            type = "COPY"
+            value = "reporter"
+          },
+        ]
+        cc = [
+        ]
+        bcc = [
+        ]
+        subject = "this is mail"
+        body = "mail"
+        mimeType = "text/html"
+        convertLineBreaks = true
+      }
+      children = [
+      ]
+      conditions = [
+      ]
+    },
+    {
+      component = "CONDITION"
+      schemaVersion = 1
+      type = "jira.jql.condition"
+      children = [
+      ]
+      conditions = [
+      ]
+      rawValue = "${ jira.Field.instance.Priority__priority } > ${ jira.Priority.instance.High.name }"
+    },
+    {
+      component = "CONDITION"
+      schemaVersion = 1
+      type = "jira.issues.related.condition"
+      value = {
+        relatedType = "sprint"
+        linkTypes = [
+        ]
+        operator = "somematch"
+        relatedJql = ""
+        compareJql = "${ jira.Field.instance.Priority__priority } > ${ jira.Priority.instance.Medium.name }"
+        compareValue = 0
+        similarityLimit = 40
+        jql = ""
+      }
+      children = [
+      ]
+      conditions = [
+      ]
+    },
+    {
+      component = "CONDITION"
+      schemaVersion = 4
+      type = "jira.user.condition"
+      value = {
+        conditions = [
+          {
+            field = jira.Field.instance.Reporter__user
+            check = "USER_IS"
+            criteria = [
+              {
+                type = "ID"
+                value = {
+                  id = "616e3f77e79ff6006f1eca7f"
+                  displayName = "Shir Reifenberg"
+                }
+              },
+            ]
+          },
+        ]
+        operator = "OR"
+      }
+      children = [
+      ]
+      conditions = [
+      ]
+    },
+  ]
+  canOtherRuleTrigger = false
+  notifyOnError = "FIRSTERROR"
+  projects = [
+    {
+      projectId = jira.Project.instance.AlonCompanyProject
+    },
+  ]
+  labels = [
+  ]
+  tags = [
+    {
+      tagType = "IS_RULE_UPDATED"
+      tagValue = "true"
+    },
+  ]
+  writeAccessType = "UNRESTRICTED"
+  collaborators = [
+  ]
+}

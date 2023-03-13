@@ -1,0 +1,13 @@
+jira.Screen PROC0356__Simple_Issue_Tracking_Comment_Screen@fsssss {
+  name = "PROC0356: Simple Issue Tracking Comment Screen"
+  description = ""
+  tabs = {
+    Field_Tab@s = {
+      name = "Field Tab"
+      fields = [
+        jira.Field.instance.Custom_multi_line_field__textarea__c@sssuuuu,
+      ]
+      position = 0
+    }
+  }
+}

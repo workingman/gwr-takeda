@@ -1,0 +1,25 @@
+jira.DashboardGadget ITSM_Sample_Dashboard_s__Issue_Statistics_0_2@uumuusuu {
+  uri = "rest/gadgets/1.0/g/com.atlassian.jira.gadgets:stats-gadget/gadgets/stats-gadget.xml"
+  color = "blue"
+  position = {
+    row = 2
+    column = 0
+  }
+  title = "Issue Statistics"
+  properties = {
+    config = {
+      isConfigured = "true"
+      sortDirection = "asc"
+      statType = jira.Field.instance.Urgency__select__c
+      name = "\"ITSM sample space\""
+      includeResolvedIssues = "false"
+      projectOrFilterId = "project-10038"
+      sortBy = "natural"
+      id = "10038"
+      type = "project"
+    }
+  }
+  _parent = [
+    jira.Dashboard.instance.ITSM_Sample_Dashboard@s,
+  ]
+}

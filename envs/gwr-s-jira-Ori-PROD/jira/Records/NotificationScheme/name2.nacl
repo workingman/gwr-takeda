@@ -1,0 +1,4 @@
+jira.NotificationScheme name2 {
+  name = "name2"
+  description = ""
+}

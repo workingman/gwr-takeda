@@ -1,0 +1,23 @@
+jira.DashboardGadget ITSM_Sample_Dashboard_s__Pie_Chart_1_0@uumuusuu {
+  uri = "rest/gadgets/1.0/g/com.atlassian.jira.gadgets:pie-chart-gadget/gadgets/piechart-gadget.xml"
+  color = "blue"
+  position = {
+    row = 0
+    column = 1
+  }
+  title = "Pie Chart"
+  properties = {
+    config = {
+      isConfigured = "true"
+      statType = jira.Field.instance.Issue_Type__issuetype@suu
+      name = "ITSM sample space"
+      refresh = "false"
+      projectOrFilterId = ""
+      id = "10038"
+      type = "project"
+    }
+  }
+  _parent = [
+    jira.Dashboard.instance.ITSM_Sample_Dashboard@s,
+  ]
+}

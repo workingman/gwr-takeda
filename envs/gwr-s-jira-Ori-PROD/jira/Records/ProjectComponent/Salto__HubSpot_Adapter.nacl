@@ -1,0 +1,7 @@
+jira.ProjectComponent Salto__HubSpot_Adapter@uus {
+  name = "HubSpot Adapter"
+  assigneeType = "PROJECT_DEFAULT"
+  _parent = [
+    jira.Project.instance.Salto,
+  ]
+}

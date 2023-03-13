@@ -1,0 +1,89 @@
+jira.Automation shirIssueMoved_CreateVersion_logWork_AlonCompanyProject {
+  name = "shirIssueMoved_CreateVersion_logWork"
+  state = "ENABLED"
+  description = "tests issueMove option and create version option"
+  authorAccountId = {
+    id = "616e3f77e79ff6006f1eca7f"
+    displayName = "Shir Reifenberg"
+  }
+  actor = {
+    type = "ACCOUNT_ID"
+    value = {
+      id = "557058:f58131cb-b67d-43c7-b30d-6b58d40bd077"
+      displayName = "Automation for Jira"
+    }
+  }
+  trigger = {
+    component = "TRIGGER"
+    schemaVersion = 1
+    type = "jira.issue.event.trigger:moved"
+    value = {
+      eventKey = "jira:issue_updated"
+      issueEvent = "issue_moved"
+      sourceProject = jira.Project.instance.Gil_s_Project@ts
+      targetProject = "-1999"
+    }
+    children = [
+    ]
+    conditions = [
+    ]
+  }
+  components = [
+    {
+      component = "ACTION"
+      schemaVersion = 1
+      type = "jira.version.create"
+      value = {
+        versionName = "newVersion"
+        overrideReleaseDate = "SET_ON_EMPTY"
+        project = {
+          type = "ID"
+          value = jira.Project.instance.AlonCompanyProject
+          additional = "software"
+        }
+      }
+      children = [
+      ]
+      conditions = [
+      ]
+    },
+    {
+      component = "ACTION"
+      schemaVersion = 3
+      type = "jira.worklog.add"
+      value = {
+        timeSpent = "10m"
+        dateStarted = {
+          type = "SMART"
+          value = "{{now}}"
+        }
+        description = "very important thing"
+        adjustEstimate = "ADJUST_AUTOMATICALLY"
+        visibility = {
+          label = "TPT-engineering (Group)"
+          value = jira.Group.instance.TPT_engineering@b
+          type = "group"
+        }
+      }
+      children = [
+      ]
+      conditions = [
+      ]
+    },
+  ]
+  canOtherRuleTrigger = false
+  notifyOnError = "FIRSTERROR"
+  projects = [
+    {
+      projectId = jira.Project.instance.AlonCompanyProject
+    },
+  ]
+  labels = [
+    jira.AutomationLabel.instance.test_label@s,
+  ]
+  tags = [
+  ]
+  writeAccessType = "UNRESTRICTED"
+  collaborators = [
+  ]
+}

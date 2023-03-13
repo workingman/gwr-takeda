@@ -1,0 +1,1458 @@
+jira.FieldConfiguration Jira_Service_Management_Field_Configuration_for_Project_TS4@s {
+  name = "Jira Service Management Field Configuration for Project TS4"
+  description = "This Jira Service Management Field Configuration was generated for Project TS4"
+}
+jira.FieldConfigurationItem Jira_Service_Management_Field_Configuration_for_Project_TS4_s_Approvers__multiuserpicker__c@uuuuuuumuuuuu {
+  id = jira.Field.instance.Approvers__multiuserpicker__c
+  description = "Contains users needed for approval. This custom field was created by Jira Service Desk."
+  isHidden = false
+  isRequired = false
+  _parent = [
+    jira.FieldConfiguration.instance.Jira_Service_Management_Field_Configuration_for_Project_TS4@s,
+  ]
+}
+jira.FieldConfigurationItem Jira_Service_Management_Field_Configuration_for_Project_TS4_s_Impact__select__c@uuuuuuumuuuuu {
+  id = jira.Field.instance.Impact__select__c
+  description = ""
+  isHidden = false
+  isRequired = false
+  _parent = [
+    jira.FieldConfiguration.instance.Jira_Service_Management_Field_Configuration_for_Project_TS4@s,
+  ]
+}
+jira.FieldConfigurationItem Jira_Service_Management_Field_Configuration_for_Project_TS4_s_Change_type__select__c_suuuu@uuuuuuumuuuuuum {
+  id = jira.Field.instance.Change_type__select__c@suuuu
+  description = ""
+  isHidden = false
+  isRequired = false
+  _parent = [
+    jira.FieldConfiguration.instance.Jira_Service_Management_Field_Configuration_for_Project_TS4@s,
+  ]
+}
+jira.FieldConfigurationItem Jira_Service_Management_Field_Configuration_for_Project_TS4_s_Change_risk__select__c_suuuu@uuuuuuumuuuuuum {
+  id = jira.Field.instance.Change_risk__select__c@suuuu
+  description = ""
+  isHidden = false
+  isRequired = false
+  _parent = [
+    jira.FieldConfiguration.instance.Jira_Service_Management_Field_Configuration_for_Project_TS4@s,
+  ]
+}
+jira.FieldConfigurationItem Jira_Service_Management_Field_Configuration_for_Project_TS4_s_Change_reason__select__c_suuuu@uuuuuuumuuuuuum {
+  id = jira.Field.instance.Change_reason__select__c@suuuu
+  description = "Choose the reason for the change request"
+  isHidden = false
+  isRequired = false
+  _parent = [
+    jira.FieldConfiguration.instance.Jira_Service_Management_Field_Configuration_for_Project_TS4@s,
+  ]
+}
+jira.FieldConfigurationItem Jira_Service_Management_Field_Configuration_for_Project_TS4_s_Change_start_date__datetime__c_ssuuuu@uuuuuuumuuuuuuum {
+  id = jira.Field.instance.Change_start_date__datetime__c@ssuuuu
+  description = "Specify the time and date for the start of the change"
+  isHidden = false
+  isRequired = false
+  _parent = [
+    jira.FieldConfiguration.instance.Jira_Service_Management_Field_Configuration_for_Project_TS4@s,
+  ]
+}
+jira.FieldConfigurationItem Jira_Service_Management_Field_Configuration_for_Project_TS4_s_Change_completion_date__datetime__c_ssuuuu@uuuuuuumuuuuuuum {
+  id = jira.Field.instance.Change_completion_date__datetime__c@ssuuuu
+  description = "Specify the completion time for the change request"
+  isHidden = false
+  isRequired = false
+  _parent = [
+    jira.FieldConfiguration.instance.Jira_Service_Management_Field_Configuration_for_Project_TS4@s,
+  ]
+}
+jira.FieldConfigurationItem Jira_Service_Management_Field_Configuration_for_Project_TS4_s__CHART__Date_of_First_Response__firstresponsedate__c_hissssuuuu@uuuuuuumuuuuuuuuuuum {
+  id = jira.Field.instance._CHART__Date_of_First_Response__firstresponsedate__c@hissssuuuu
+  description = ""
+  isHidden = false
+  isRequired = false
+  _parent = [
+    jira.FieldConfiguration.instance.Jira_Service_Management_Field_Configuration_for_Project_TS4@s,
+  ]
+}
+jira.FieldConfigurationItem Jira_Service_Management_Field_Configuration_for_Project_TS4_s__CHART__Time_in_Status__timeinstatus__c_hisssuuuu@uuuuuuumuuuuuuuuuum {
+  id = jira.Field.instance._CHART__Time_in_Status__timeinstatus__c@hisssuuuu
+  description = ""
+  isHidden = false
+  isRequired = false
+  _parent = [
+    jira.FieldConfiguration.instance.Jira_Service_Management_Field_Configuration_for_Project_TS4@s,
+  ]
+}
+jira.FieldConfigurationItem Jira_Service_Management_Field_Configuration_for_Project_TS4_s_uuid__uuid__c@uuuuuuumuuuuu {
+  id = jira.Field.instance.uuid__uuid__c
+  description = "Adding both UUID and Location fields to a project, will enable JIRA Mobile Connect for that project."
+  isHidden = false
+  isRequired = false
+  _parent = [
+    jira.FieldConfiguration.instance.Jira_Service_Management_Field_Configuration_for_Project_TS4@s,
+  ]
+}
+jira.FieldConfigurationItem Jira_Service_Management_Field_Configuration_for_Project_TS4_s_Location__location__c@uuuuuuumuuuuu {
+  id = jira.Field.instance.Location__location__c
+  description = "Adding both UUID and Location fields to a project, will enable JIRA Mobile Connect for that project."
+  isHidden = false
+  isRequired = false
+  _parent = [
+    jira.FieldConfiguration.instance.Jira_Service_Management_Field_Configuration_for_Project_TS4@s,
+  ]
+}
+jira.FieldConfigurationItem Jira_Service_Management_Field_Configuration_for_Project_TS4_s_Story_Points__float__c_suuuu@uuuuuuumuuuuuum {
+  id = jira.Field.instance.Story_Points__float__c@suuuu
+  description = "Measurement of complexity and/or size of a requirement."
+  isHidden = false
+  isRequired = false
+  _parent = [
+    jira.FieldConfiguration.instance.Jira_Service_Management_Field_Configuration_for_Project_TS4@s,
+  ]
+}
+jira.FieldConfigurationItem Jira_Service_Management_Field_Configuration_for_Project_TS4_s_Custom_multi_line_field__textarea__c_sssuuuu@uuuuuuumuuuuuuuum {
+  id = jira.Field.instance.Custom_multi_line_field__textarea__c@sssuuuu
+  description = "the description"
+  isHidden = false
+  isRequired = false
+  renderer = "text-renderer"
+  _parent = [
+    jira.FieldConfiguration.instance.Jira_Service_Management_Field_Configuration_for_Project_TS4@s,
+  ]
+}
+jira.FieldConfigurationItem Jira_Service_Management_Field_Configuration_for_Project_TS4_s_CustomTestSelectList__cascadingselect__c@uuuuuuumuuuuu {
+  id = jira.Field.instance.CustomTestSelectList__cascadingselect__c
+  description = "desc!"
+  isHidden = false
+  isRequired = false
+  _parent = [
+    jira.FieldConfiguration.instance.Jira_Service_Management_Field_Configuration_for_Project_TS4@s,
+  ]
+}
+jira.FieldConfigurationItem Jira_Service_Management_Field_Configuration_for_Project_TS4_s_CustomMultiSelect__multiselect__c@uuuuuuumuuuuu {
+  id = jira.Field.instance.CustomMultiSelect__multiselect__c
+  description = "Desc"
+  isHidden = false
+  isRequired = false
+  _parent = [
+    jira.FieldConfiguration.instance.Jira_Service_Management_Field_Configuration_for_Project_TS4@s,
+  ]
+}
+jira.FieldConfigurationItem Jira_Service_Management_Field_Configuration_for_Project_TS4_s_CustomRadioButtonZ__radiobuttons__c@uuuuuuumuuuuu {
+  id = jira.Field.instance.CustomRadioButtonZ__radiobuttons__c
+  description = ""
+  isHidden = false
+  isRequired = false
+  _parent = [
+    jira.FieldConfiguration.instance.Jira_Service_Management_Field_Configuration_for_Project_TS4@s,
+  ]
+}
+jira.FieldConfigurationItem Jira_Service_Management_Field_Configuration_for_Project_TS4_s_CustomCheckboxes__multicheckboxes__c@uuuuuuumuuuuu {
+  id = jira.Field.instance.CustomCheckboxes__multicheckboxes__c
+  description = ""
+  isHidden = false
+  isRequired = false
+  _parent = [
+    jira.FieldConfiguration.instance.Jira_Service_Management_Field_Configuration_for_Project_TS4@s,
+  ]
+}
+jira.FieldConfigurationItem Jira_Service_Management_Field_Configuration_for_Project_TS4_s___Progress2__multicheckboxes__c__00931suuuu@uuuuuuumuuuuuuumu {
+  id = jira.Field.instance.__Progress2__multicheckboxes__c@_00931suuuu
+  description = "aaaaa"
+  isHidden = false
+  isRequired = false
+  _parent = [
+    jira.FieldConfiguration.instance.Jira_Service_Management_Field_Configuration_for_Project_TS4@s,
+  ]
+}
+jira.FieldConfigurationItem Jira_Service_Management_Field_Configuration_for_Project_TS4_s_testLabel__labels__c@uuuuuuumuuuuu {
+  id = jira.Field.instance.testLabel__labels__c
+  description = ""
+  isHidden = false
+  isRequired = false
+  _parent = [
+    jira.FieldConfiguration.instance.Jira_Service_Management_Field_Configuration_for_Project_TS4@s,
+  ]
+}
+jira.FieldConfigurationItem Jira_Service_Management_Field_Configuration_for_Project_TS4_s_testSelectList__cascadingselect__c@uuuuuuumuuuuu {
+  id = jira.Field.instance.testSelectList__cascadingselect__c
+  description = "desc!"
+  isHidden = false
+  isRequired = false
+  _parent = [
+    jira.FieldConfiguration.instance.Jira_Service_Management_Field_Configuration_for_Project_TS4@s,
+  ]
+}
+jira.FieldConfigurationItem Jira_Service_Management_Field_Configuration_for_Project_TS4_s_testVersionPicker__multiversion__c@uuuuuuumuuuuu {
+  id = jira.Field.instance.testVersionPicker__multiversion__c
+  description = ""
+  isHidden = false
+  isRequired = false
+  _parent = [
+    jira.FieldConfiguration.instance.Jira_Service_Management_Field_Configuration_for_Project_TS4@s,
+  ]
+}
+jira.FieldConfigurationItem Jira_Service_Management_Field_Configuration_for_Project_TS4_s_testSelectList2__cascadingselect__c@uuuuuuumuuuuu {
+  id = jira.Field.instance.testSelectList2__cascadingselect__c
+  description = "desc!"
+  isHidden = false
+  isRequired = false
+  _parent = [
+    jira.FieldConfiguration.instance.Jira_Service_Management_Field_Configuration_for_Project_TS4@s,
+  ]
+}
+jira.FieldConfigurationItem Jira_Service_Management_Field_Configuration_for_Project_TS4_s_testSelectList4__cascadingselect__c@uuuuuuumuuuuu {
+  id = jira.Field.instance.testSelectList4__cascadingselect__c
+  description = "desc!"
+  isHidden = false
+  isRequired = false
+  _parent = [
+    jira.FieldConfiguration.instance.Jira_Service_Management_Field_Configuration_for_Project_TS4@s,
+  ]
+}
+jira.FieldConfigurationItem Jira_Service_Management_Field_Configuration_for_Project_TS4_s_testSelectList5__cascadingselect__c@uuuuuuumuuuuu {
+  id = jira.Field.instance.testSelectList5__cascadingselect__c
+  description = "desc!2"
+  isHidden = false
+  isRequired = false
+  _parent = [
+    jira.FieldConfiguration.instance.Jira_Service_Management_Field_Configuration_for_Project_TS4@s,
+  ]
+}
+jira.FieldConfigurationItem Jira_Service_Management_Field_Configuration_for_Project_TS4_s_____________labels__c__01513_01491_01492s_01489_01506_01489_01512_01497_01514uuuu@uuuuuuumuuuuuuuuuuuuuuumuuuuuuuuu {
+  id = jira.Field.instance.____________labels__c@_01513_01491_01492s_01489_01506_01489_01512_01497_01514uuuu
+  description = ""
+  isHidden = false
+  isRequired = false
+  _parent = [
+    jira.FieldConfiguration.instance.Jira_Service_Management_Field_Configuration_for_Project_TS4@s,
+  ]
+}
+jira.FieldConfigurationItem Jira_Service_Management_Field_Configuration_for_Project_TS4_s_________________________________________________datepicker__c__01513_01491_01492s_01489_01506_01489_01512_01497_01514s_01506_01501sr_01502_01512_01499_01488_01493_01514rs_01493_01491_01489_01512_01497_01501slmnzcpweokjs_01488_01495_01512_01497_01501uuuu@uuuuuuumuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuumuuuuuuuuuuuuuuuuuuuuuuuuuuuu {
+  id = jira.Field.instance.________________________________________________datepicker__c@_01513_01491_01492s_01489_01506_01489_01512_01497_01514s_01506_01501sr_01502_01512_01499_01488_01493_01514rs_01493_01491_01489_01512_01497_01501slmnzcpweokjs_01488_01495_01512_01497_01501uuuu
+  description = ""
+  isHidden = false
+  isRequired = false
+  _parent = [
+    jira.FieldConfiguration.instance.Jira_Service_Management_Field_Configuration_for_Project_TS4@s,
+  ]
+}
+jira.FieldConfigurationItem Jira_Service_Management_Field_Configuration_for_Project_TS4_s____multicheckboxes__c__01488uuuu@uuuuuuumuuuuuumu {
+  id = jira.Field.instance.___multicheckboxes__c@_01488uuuu
+  description = ""
+  isHidden = false
+  isRequired = false
+  _parent = [
+    jira.FieldConfiguration.instance.Jira_Service_Management_Field_Configuration_for_Project_TS4@s,
+  ]
+}
+jira.FieldConfigurationItem Jira_Service_Management_Field_Configuration_for_Project_TS4_s____multicheckboxes__c__01489uuuu@uuuuuuumuuuuuumu {
+  id = jira.Field.instance.___multicheckboxes__c@_01489uuuu
+  description = "The second Hebrew one"
+  isHidden = false
+  isRequired = false
+  _parent = [
+    jira.FieldConfiguration.instance.Jira_Service_Management_Field_Configuration_for_Project_TS4@s,
+  ]
+}
+jira.FieldConfigurationItem Jira_Service_Management_Field_Configuration_for_Project_TS4_s_Incident_Severity__select__c_suuuu@uuuuuuumuuuuuum {
+  id = jira.Field.instance.Incident_Severity__select__c@suuuu
+  description = ""
+  isHidden = false
+  isRequired = false
+  _parent = [
+    jira.FieldConfiguration.instance.Jira_Service_Management_Field_Configuration_for_Project_TS4@s,
+  ]
+}
+jira.FieldConfigurationItem Jira_Service_Management_Field_Configuration_for_Project_TS4_s_Related_Customers__labels__c_suuuu@uuuuuuumuuuuuum {
+  id = jira.Field.instance.Related_Customers__labels__c@suuuu
+  description = ""
+  isHidden = false
+  isRequired = false
+  _parent = [
+    jira.FieldConfiguration.instance.Jira_Service_Management_Field_Configuration_for_Project_TS4@s,
+  ]
+}
+jira.FieldConfigurationItem Jira_Service_Management_Field_Configuration_for_Project_TS4_s_Urgency__select__c@uuuuuuumuuuuu {
+  id = jira.Field.instance.Urgency__select__c
+  description = ""
+  isHidden = false
+  isRequired = false
+  _parent = [
+    jira.FieldConfiguration.instance.Jira_Service_Management_Field_Configuration_for_Project_TS4@s,
+  ]
+}
+jira.FieldConfigurationItem Jira_Service_Management_Field_Configuration_for_Project_TS4_s_Pending_reason__select__c_suuuu@uuuuuuumuuuuuum {
+  id = jira.Field.instance.Pending_reason__select__c@suuuu
+  description = "Specify the reason for moving the issue to the Pending status"
+  isHidden = false
+  isRequired = false
+  _parent = [
+    jira.FieldConfiguration.instance.Jira_Service_Management_Field_Configuration_for_Project_TS4@s,
+  ]
+}
+jira.FieldConfigurationItem Jira_Service_Management_Field_Configuration_for_Project_TS4_s_Product_categorization__cascadingselect__c_suuuu@uuuuuuumuuuuuum {
+  id = jira.Field.instance.Product_categorization__cascadingselect__c@suuuu
+  description = ""
+  isHidden = false
+  isRequired = false
+  _parent = [
+    jira.FieldConfiguration.instance.Jira_Service_Management_Field_Configuration_for_Project_TS4@s,
+  ]
+}
+jira.FieldConfigurationItem Jira_Service_Management_Field_Configuration_for_Project_TS4_s_Operational_categorization__cascadingselect__c_suuuu@uuuuuuumuuuuuum {
+  id = jira.Field.instance.Operational_categorization__cascadingselect__c@suuuu
+  description = ""
+  isHidden = false
+  isRequired = false
+  _parent = [
+    jira.FieldConfiguration.instance.Jira_Service_Management_Field_Configuration_for_Project_TS4@s,
+  ]
+}
+jira.FieldConfigurationItem Jira_Service_Management_Field_Configuration_for_Project_TS4_s_Approver_groups__multigrouppicker__c_suuuu@uuuuuuumuuuuuum {
+  id = jira.Field.instance.Approver_groups__multigrouppicker__c@suuuu
+  description = "Contains groups of users needed for approval. This custom field was created by Jira Service Management."
+  isHidden = false
+  isRequired = false
+  _parent = [
+    jira.FieldConfiguration.instance.Jira_Service_Management_Field_Configuration_for_Project_TS4@s,
+  ]
+}
+jira.FieldConfigurationItem Jira_Service_Management_Field_Configuration_for_Project_TS4_s_Affected_hardware__textfield__c_suuuu@uuuuuuumuuuuuum {
+  id = jira.Field.instance.Affected_hardware__textfield__c@suuuu
+  description = "desc \${}"
+  isHidden = false
+  isRequired = false
+  renderer = "text-renderer"
+  _parent = [
+    jira.FieldConfiguration.instance.Jira_Service_Management_Field_Configuration_for_Project_TS4@s,
+  ]
+}
+jira.FieldConfigurationItem Jira_Service_Management_Field_Configuration_for_Project_TS4_s_Severity__select__c@uuuuuuumuuuuu {
+  id = jira.Field.instance.Severity__select__c
+  description = ""
+  isHidden = false
+  isRequired = false
+  _parent = [
+    jira.FieldConfiguration.instance.Jira_Service_Management_Field_Configuration_for_Project_TS4@s,
+  ]
+}
+jira.FieldConfigurationItem Jira_Service_Management_Field_Configuration_for_Project_TS4_s_Implementation_plan__textarea__c_suuuu@uuuuuuumuuuuuum {
+  id = jira.Field.instance.Implementation_plan__textarea__c@suuuu
+  description = ""
+  isHidden = false
+  isRequired = false
+  renderer = "text-renderer"
+  _parent = [
+    jira.FieldConfiguration.instance.Jira_Service_Management_Field_Configuration_for_Project_TS4@s,
+  ]
+}
+jira.FieldConfigurationItem Jira_Service_Management_Field_Configuration_for_Project_TS4_s_Backout_plan__textarea__c_suuuu@uuuuuuumuuuuuum {
+  id = jira.Field.instance.Backout_plan__textarea__c@suuuu
+  description = ""
+  isHidden = false
+  isRequired = false
+  renderer = "text-renderer"
+  _parent = [
+    jira.FieldConfiguration.instance.Jira_Service_Management_Field_Configuration_for_Project_TS4@s,
+  ]
+}
+jira.FieldConfigurationItem Jira_Service_Management_Field_Configuration_for_Project_TS4_s_Test_plan__textarea__c_suuuu@uuuuuuumuuuuuum {
+  id = jira.Field.instance.Test_plan__textarea__c@suuuu
+  description = ""
+  isHidden = false
+  isRequired = false
+  renderer = "text-renderer"
+  _parent = [
+    jira.FieldConfiguration.instance.Jira_Service_Management_Field_Configuration_for_Project_TS4@s,
+  ]
+}
+jira.FieldConfigurationItem Jira_Service_Management_Field_Configuration_for_Project_TS4_s_Planned_start__datetime__c_suuuu@uuuuuuumuuuuuum {
+  id = jira.Field.instance.Planned_start__datetime__c@suuuu
+  description = "Enter when the change is planned to start."
+  isHidden = false
+  isRequired = false
+  _parent = [
+    jira.FieldConfiguration.instance.Jira_Service_Management_Field_Configuration_for_Project_TS4@s,
+  ]
+}
+jira.FieldConfigurationItem Jira_Service_Management_Field_Configuration_for_Project_TS4_s_Planned_end__datetime__c_suuuu@uuuuuuumuuuuuum {
+  id = jira.Field.instance.Planned_end__datetime__c@suuuu
+  description = "Enter when the change is planned to end."
+  isHidden = false
+  isRequired = false
+  _parent = [
+    jira.FieldConfiguration.instance.Jira_Service_Management_Field_Configuration_for_Project_TS4@s,
+  ]
+}
+jira.FieldConfigurationItem Jira_Service_Management_Field_Configuration_for_Project_TS4_s_Investigation_reason__select__c_suuuu@uuuuuuumuuuuuum {
+  id = jira.Field.instance.Investigation_reason__select__c@suuuu
+  description = "Reason for problem investigation"
+  isHidden = false
+  isRequired = false
+  _parent = [
+    jira.FieldConfiguration.instance.Jira_Service_Management_Field_Configuration_for_Project_TS4@s,
+  ]
+}
+jira.FieldConfigurationItem Jira_Service_Management_Field_Configuration_for_Project_TS4_s_Root_cause__textarea__c_suuuu@uuuuuuumuuuuuum {
+  id = jira.Field.instance.Root_cause__textarea__c@suuuu
+  description = "Describe the root cause for the problem"
+  isHidden = false
+  isRequired = false
+  renderer = "text-renderer"
+  _parent = [
+    jira.FieldConfiguration.instance.Jira_Service_Management_Field_Configuration_for_Project_TS4@s,
+  ]
+}
+jira.FieldConfigurationItem Jira_Service_Management_Field_Configuration_for_Project_TS4_s_Workaround__textarea__c@uuuuuuumuuuuu {
+  id = jira.Field.instance.Workaround__textarea__c
+  description = "Describe the workaround for the problem"
+  isHidden = false
+  isRequired = false
+  renderer = "text-renderer"
+  _parent = [
+    jira.FieldConfiguration.instance.Jira_Service_Management_Field_Configuration_for_Project_TS4@s,
+  ]
+}
+jira.FieldConfigurationItem Jira_Service_Management_Field_Configuration_for_Project_TS4_s_Urgency2__select__c@uuuuuuumuuuuu {
+  id = jira.Field.instance.Urgency2__select__c
+  description = ""
+  isHidden = false
+  isRequired = false
+  _parent = [
+    jira.FieldConfiguration.instance.Jira_Service_Management_Field_Configuration_for_Project_TS4@s,
+  ]
+}
+jira.FieldConfigurationItem Jira_Service_Management_Field_Configuration_for_Project_TS4_s_testSelectList9__cascadingselect__c@uuuuuuumuuuuu {
+  id = jira.Field.instance.testSelectList9__cascadingselect__c
+  description = "desc!2"
+  isHidden = false
+  isRequired = false
+  _parent = [
+    jira.FieldConfiguration.instance.Jira_Service_Management_Field_Configuration_for_Project_TS4@s,
+  ]
+}
+jira.FieldConfigurationItem Jira_Service_Management_Field_Configuration_for_Project_TS4_s_Urgency4__select__c@uuuuuuumuuuuu {
+  id = jira.Field.instance.Urgency4__select__c
+  description = ""
+  isHidden = false
+  isRequired = false
+  _parent = [
+    jira.FieldConfiguration.instance.Jira_Service_Management_Field_Configuration_for_Project_TS4@s,
+  ]
+}
+jira.FieldConfigurationItem Jira_Service_Management_Field_Configuration_for_Project_TS4_s_Urgency5__select__c@uuuuuuumuuuuu {
+  id = jira.Field.instance.Urgency5__select__c
+  description = ""
+  isHidden = false
+  isRequired = false
+  _parent = [
+    jira.FieldConfiguration.instance.Jira_Service_Management_Field_Configuration_for_Project_TS4@s,
+  ]
+}
+jira.FieldConfigurationItem Jira_Service_Management_Field_Configuration_for_Project_TS4_s_Urgency11__select__c@uuuuuuumuuuuu {
+  id = jira.Field.instance.Urgency11__select__c
+  description = ""
+  isHidden = false
+  isRequired = false
+  _parent = [
+    jira.FieldConfiguration.instance.Jira_Service_Management_Field_Configuration_for_Project_TS4@s,
+  ]
+}
+jira.FieldConfigurationItem Jira_Service_Management_Field_Configuration_for_Project_TS4_s_test__textarea__c@uuuuuuumuuuuu {
+  id = jira.Field.instance.test__textarea__c
+  description = "test"
+  isHidden = false
+  isRequired = false
+  renderer = "text-renderer"
+  _parent = [
+    jira.FieldConfiguration.instance.Jira_Service_Management_Field_Configuration_for_Project_TS4@s,
+  ]
+}
+jira.FieldConfigurationItem Jira_Service_Management_Field_Configuration_for_Project_TS4_s_Publication_date__datepicker__c_suuuu@uuuuuuumuuuuuum {
+  id = jira.Field.instance.Publication_date__datepicker__c@suuuu
+  description = ""
+  isHidden = false
+  isRequired = false
+  _parent = [
+    jira.FieldConfiguration.instance.Jira_Service_Management_Field_Configuration_for_Project_TS4@s,
+  ]
+}
+jira.FieldConfigurationItem Jira_Service_Management_Field_Configuration_for_Project_TS4_s_Content_type__textfield__c_suuuu@uuuuuuumuuuuuum {
+  id = jira.Field.instance.Content_type__textfield__c@suuuu
+  description = ""
+  isHidden = false
+  isRequired = false
+  renderer = "text-renderer"
+  _parent = [
+    jira.FieldConfiguration.instance.Jira_Service_Management_Field_Configuration_for_Project_TS4@s,
+  ]
+}
+jira.FieldConfigurationItem Jira_Service_Management_Field_Configuration_for_Project_TS4_s_userPicker__multiuserpicker__c@uuuuuuumuuuuu {
+  id = jira.Field.instance.userPicker__multiuserpicker__c
+  description = ""
+  isHidden = false
+  isRequired = false
+  _parent = [
+    jira.FieldConfiguration.instance.Jira_Service_Management_Field_Configuration_for_Project_TS4@s,
+  ]
+}
+jira.FieldConfigurationItem Jira_Service_Management_Field_Configuration_for_Project_TS4_s_Flagged2__multicheckboxes__c@uuuuuuumuuuuu {
+  id = jira.Field.instance.Flagged2__multicheckboxes__c
+  description = "Allows to flag issues with impediments."
+  isHidden = false
+  isRequired = false
+  _parent = [
+    jira.FieldConfiguration.instance.Jira_Service_Management_Field_Configuration_for_Project_TS4@s,
+  ]
+}
+jira.FieldConfigurationItem Jira_Service_Management_Field_Configuration_for_Project_TS4_s_testField12345__multicheckboxes__c@uuuuuuumuuuuu {
+  id = jira.Field.instance.testField12345__multicheckboxes__c
+  description = ""
+  isHidden = false
+  isRequired = false
+  _parent = [
+    jira.FieldConfiguration.instance.Jira_Service_Management_Field_Configuration_for_Project_TS4@s,
+  ]
+}
+jira.FieldConfigurationItem Jira_Service_Management_Field_Configuration_for_Project_TS4_s_Fieldy_McField__multicheckboxes__c_suuuu@uuuuuuumuuuuuum {
+  id = jira.Field.instance.Fieldy_McField__multicheckboxes__c@suuuu
+  description = ""
+  isHidden = false
+  isRequired = false
+  _parent = [
+    jira.FieldConfiguration.instance.Jira_Service_Management_Field_Configuration_for_Project_TS4@s,
+  ]
+}
+jira.FieldConfigurationItem Jira_Service_Management_Field_Configuration_for_Project_TS4_s_Maintenance_type__select__c_suuuu@uuuuuuumuuuuuum {
+  id = jira.Field.instance.Maintenance_type__select__c@suuuu
+  description = ""
+  isHidden = false
+  isRequired = false
+  _parent = [
+    jira.FieldConfiguration.instance.Jira_Service_Management_Field_Configuration_for_Project_TS4@s,
+  ]
+}
+jira.FieldConfigurationItem Jira_Service_Management_Field_Configuration_for_Project_TS4_s_Maintenance_location__textfield__c_suuuu@uuuuuuumuuuuuum {
+  id = jira.Field.instance.Maintenance_location__textfield__c@suuuu
+  description = ""
+  isHidden = false
+  isRequired = false
+  renderer = "text-renderer"
+  _parent = [
+    jira.FieldConfiguration.instance.Jira_Service_Management_Field_Configuration_for_Project_TS4@s,
+  ]
+}
+jira.FieldConfigurationItem Jira_Service_Management_Field_Configuration_for_Project_TS4_s_Move_date__datepicker__c_suuuu@uuuuuuumuuuuuum {
+  id = jira.Field.instance.Move_date__datepicker__c@suuuu
+  description = ""
+  isHidden = false
+  isRequired = false
+  _parent = [
+    jira.FieldConfiguration.instance.Jira_Service_Management_Field_Configuration_for_Project_TS4@s,
+  ]
+}
+jira.FieldConfigurationItem Jira_Service_Management_Field_Configuration_for_Project_TS4_s_Move_from__textfield__c_suuuu@uuuuuuumuuuuuum {
+  id = jira.Field.instance.Move_from__textfield__c@suuuu
+  description = ""
+  isHidden = false
+  isRequired = false
+  renderer = "text-renderer"
+  _parent = [
+    jira.FieldConfiguration.instance.Jira_Service_Management_Field_Configuration_for_Project_TS4@s,
+  ]
+}
+jira.FieldConfigurationItem Jira_Service_Management_Field_Configuration_for_Project_TS4_s_Move_to__textfield__c_suuuu@uuuuuuumuuuuuum {
+  id = jira.Field.instance.Move_to__textfield__c@suuuu
+  description = ""
+  isHidden = false
+  isRequired = false
+  renderer = "text-renderer"
+  _parent = [
+    jira.FieldConfiguration.instance.Jira_Service_Management_Field_Configuration_for_Project_TS4@s,
+  ]
+}
+jira.FieldConfigurationItem Jira_Service_Management_Field_Configuration_for_Project_TS4_s_Move_count__textfield__c_suuuu@uuuuuuumuuuuuum {
+  id = jira.Field.instance.Move_count__textfield__c@suuuu
+  description = ""
+  isHidden = false
+  isRequired = false
+  renderer = "text-renderer"
+  _parent = [
+    jira.FieldConfiguration.instance.Jira_Service_Management_Field_Configuration_for_Project_TS4@s,
+  ]
+}
+jira.FieldConfigurationItem Jira_Service_Management_Field_Configuration_for_Project_TS4_s_Who_is_moving___multiuserpicker__c_ssauuuu@uuuuuuumuuuuuuuum {
+  id = jira.Field.instance.Who_is_moving___multiuserpicker__c@ssauuuu
+  description = ""
+  isHidden = false
+  isRequired = false
+  _parent = [
+    jira.FieldConfiguration.instance.Jira_Service_Management_Field_Configuration_for_Project_TS4@s,
+  ]
+}
+jira.FieldConfigurationItem Jira_Service_Management_Field_Configuration_for_Project_TS4_s_Event_date__datepicker__c_suuuu@uuuuuuumuuuuuum {
+  id = jira.Field.instance.Event_date__datepicker__c@suuuu
+  description = ""
+  isHidden = false
+  isRequired = false
+  _parent = [
+    jira.FieldConfiguration.instance.Jira_Service_Management_Field_Configuration_for_Project_TS4@s,
+  ]
+}
+jira.FieldConfigurationItem Jira_Service_Management_Field_Configuration_for_Project_TS4_s_Event_location__textfield__c_suuuu@uuuuuuumuuuuuum {
+  id = jira.Field.instance.Event_location__textfield__c@suuuu
+  description = ""
+  isHidden = false
+  isRequired = false
+  renderer = "text-renderer"
+  _parent = [
+    jira.FieldConfiguration.instance.Jira_Service_Management_Field_Configuration_for_Project_TS4@s,
+  ]
+}
+jira.FieldConfigurationItem Jira_Service_Management_Field_Configuration_for_Project_TS4_s_Event_count__textfield__c_suuuu@uuuuuuumuuuuuum {
+  id = jira.Field.instance.Event_count__textfield__c@suuuu
+  description = ""
+  isHidden = false
+  isRequired = false
+  renderer = "text-renderer"
+  _parent = [
+    jira.FieldConfiguration.instance.Jira_Service_Management_Field_Configuration_for_Project_TS4@s,
+  ]
+}
+jira.FieldConfigurationItem Jira_Service_Management_Field_Configuration_for_Project_TS4_s_Assignee__user@uuuuuuumuuu {
+  id = jira.Field.instance.Assignee__user
+  isHidden = false
+  isRequired = false
+  description = ""
+  _parent = [
+    jira.FieldConfiguration.instance.Jira_Service_Management_Field_Configuration_for_Project_TS4@s,
+  ]
+}
+jira.FieldConfigurationItem Jira_Service_Management_Field_Configuration_for_Project_TS4_s_Attachment__array@uuuuuuumuuu {
+  id = jira.Field.instance.Attachment__array
+  isHidden = false
+  isRequired = false
+  description = ""
+  _parent = [
+    jira.FieldConfiguration.instance.Jira_Service_Management_Field_Configuration_for_Project_TS4@s,
+  ]
+}
+jira.FieldConfigurationItem Jira_Service_Management_Field_Configuration_for_Project_TS4_s_Comment__comments_page_uub@uuuuuuumuuuum {
+  id = jira.Field.instance.Comment__comments_page@uub
+  isHidden = false
+  isRequired = false
+  renderer = "wiki-renderer"
+  description = ""
+  _parent = [
+    jira.FieldConfiguration.instance.Jira_Service_Management_Field_Configuration_for_Project_TS4@s,
+  ]
+}
+jira.FieldConfigurationItem Jira_Service_Management_Field_Configuration_for_Project_TS4_s_Components__array@uuuuuuumuuu {
+  id = jira.Field.instance.Components__array
+  isHidden = false
+  isRequired = false
+  description = ""
+  _parent = [
+    jira.FieldConfiguration.instance.Jira_Service_Management_Field_Configuration_for_Project_TS4@s,
+  ]
+}
+jira.FieldConfigurationItem Jira_Service_Management_Field_Configuration_for_Project_TS4_s_Description__string@uuuuuuumuuu {
+  id = jira.Field.instance.Description__string
+  isHidden = false
+  isRequired = false
+  renderer = "wiki-renderer"
+  description = ""
+  _parent = [
+    jira.FieldConfiguration.instance.Jira_Service_Management_Field_Configuration_for_Project_TS4@s,
+  ]
+}
+jira.FieldConfigurationItem Jira_Service_Management_Field_Configuration_for_Project_TS4_s_Due_date__date_suu@uuuuuuumuuuum {
+  id = jira.Field.instance.Due_date__date@suu
+  isHidden = false
+  isRequired = false
+  description = ""
+  _parent = [
+    jira.FieldConfiguration.instance.Jira_Service_Management_Field_Configuration_for_Project_TS4@s,
+  ]
+}
+jira.FieldConfigurationItem Jira_Service_Management_Field_Configuration_for_Project_TS4_s_Environment__string@uuuuuuumuuu {
+  id = jira.Field.instance.Environment__string
+  description = "For example operating system, software platform and/or hardware specifications (include as appropriate for the issue)."
+  isHidden = false
+  isRequired = false
+  renderer = "wiki-renderer"
+  _parent = [
+    jira.FieldConfiguration.instance.Jira_Service_Management_Field_Configuration_for_Project_TS4@s,
+  ]
+}
+jira.FieldConfigurationItem Jira_Service_Management_Field_Configuration_for_Project_TS4_s_Fix_versions__array_suu@uuuuuuumuuuum {
+  id = jira.Field.instance.Fix_versions__array@suu
+  isHidden = false
+  isRequired = false
+  description = ""
+  _parent = [
+    jira.FieldConfiguration.instance.Jira_Service_Management_Field_Configuration_for_Project_TS4@s,
+  ]
+}
+jira.FieldConfigurationItem Jira_Service_Management_Field_Configuration_for_Project_TS4_s_Linked_Issues__array_suu@uuuuuuumuuuum {
+  id = jira.Field.instance.Linked_Issues__array@suu
+  isHidden = false
+  isRequired = false
+  description = ""
+  _parent = [
+    jira.FieldConfiguration.instance.Jira_Service_Management_Field_Configuration_for_Project_TS4@s,
+  ]
+}
+jira.FieldConfigurationItem Jira_Service_Management_Field_Configuration_for_Project_TS4_s_Restrict_to__issuerestriction_suu@uuuuuuumuuuum {
+  id = jira.Field.instance.Restrict_to__issuerestriction@suu
+  isHidden = false
+  isRequired = false
+  description = ""
+  _parent = [
+    jira.FieldConfiguration.instance.Jira_Service_Management_Field_Configuration_for_Project_TS4@s,
+  ]
+}
+jira.FieldConfigurationItem Jira_Service_Management_Field_Configuration_for_Project_TS4_s_Issue_Type__issuetype_suu@uuuuuuumuuuum {
+  id = jira.Field.instance.Issue_Type__issuetype@suu
+  isHidden = false
+  isRequired = false
+  description = ""
+  _parent = [
+    jira.FieldConfiguration.instance.Jira_Service_Management_Field_Configuration_for_Project_TS4@s,
+  ]
+}
+jira.FieldConfigurationItem Jira_Service_Management_Field_Configuration_for_Project_TS4_s_Labels__array@uuuuuuumuuu {
+  id = jira.Field.instance.Labels__array
+  isHidden = false
+  isRequired = false
+  description = ""
+  _parent = [
+    jira.FieldConfiguration.instance.Jira_Service_Management_Field_Configuration_for_Project_TS4@s,
+  ]
+}
+jira.FieldConfigurationItem Jira_Service_Management_Field_Configuration_for_Project_TS4_s_Priority__priority@uuuuuuumuuu {
+  id = jira.Field.instance.Priority__priority
+  isHidden = false
+  isRequired = false
+  description = ""
+  _parent = [
+    jira.FieldConfiguration.instance.Jira_Service_Management_Field_Configuration_for_Project_TS4@s,
+  ]
+}
+jira.FieldConfigurationItem Jira_Service_Management_Field_Configuration_for_Project_TS4_s_Reporter__user@uuuuuuumuuu {
+  id = jira.Field.instance.Reporter__user
+  isHidden = false
+  isRequired = false
+  description = ""
+  _parent = [
+    jira.FieldConfiguration.instance.Jira_Service_Management_Field_Configuration_for_Project_TS4@s,
+  ]
+}
+jira.FieldConfigurationItem Jira_Service_Management_Field_Configuration_for_Project_TS4_s_Resolution__resolution@uuuuuuumuuu {
+  id = jira.Field.instance.Resolution__resolution
+  isHidden = false
+  isRequired = false
+  description = ""
+  _parent = [
+    jira.FieldConfiguration.instance.Jira_Service_Management_Field_Configuration_for_Project_TS4@s,
+  ]
+}
+jira.FieldConfigurationItem Jira_Service_Management_Field_Configuration_for_Project_TS4_s_Security_Level__securitylevel_suu@uuuuuuumuuuum {
+  id = jira.Field.instance.Security_Level__securitylevel@suu
+  isHidden = false
+  isRequired = false
+  description = ""
+  _parent = [
+    jira.FieldConfiguration.instance.Jira_Service_Management_Field_Configuration_for_Project_TS4@s,
+  ]
+}
+jira.FieldConfigurationItem Jira_Service_Management_Field_Configuration_for_Project_TS4_s_Summary__string@uuuuuuumuuu {
+  id = jira.Field.instance.Summary__string
+  isHidden = false
+  isRequired = true
+  description = ""
+  _parent = [
+    jira.FieldConfiguration.instance.Jira_Service_Management_Field_Configuration_for_Project_TS4@s,
+  ]
+}
+jira.FieldConfigurationItem Jira_Service_Management_Field_Configuration_for_Project_TS4_s_Time_tracking__timetracking_suu@uuuuuuumuuuum {
+  id = jira.Field.instance.Time_tracking__timetracking@suu
+  description = '''
+An estimate of how much work remains until this issue will be resolved.
+The format of this is ' *w *d *h *m ' (representing weeks, days, hours and minutes - where * can be any number).
+Examples: 4d, 5h 30m, 60m and 3w.
+'''
+  isHidden = false
+  isRequired = false
+  _parent = [
+    jira.FieldConfiguration.instance.Jira_Service_Management_Field_Configuration_for_Project_TS4@s,
+  ]
+}
+jira.FieldConfigurationItem Jira_Service_Management_Field_Configuration_for_Project_TS4_s_Affects_versions__array_suu@uuuuuuumuuuum {
+  id = jira.Field.instance.Affects_versions__array@suu
+  isHidden = false
+  isRequired = false
+  description = ""
+  _parent = [
+    jira.FieldConfiguration.instance.Jira_Service_Management_Field_Configuration_for_Project_TS4@s,
+  ]
+}
+jira.FieldConfigurationItem Jira_Service_Management_Field_Configuration_for_Project_TS4_s_Log_Work__array_suu@uuuuuuumuuuum {
+  id = jira.Field.instance.Log_Work__array@suu
+  description = "Allows work to be logged whilst creating, editing or transitioning issues."
+  isHidden = false
+  isRequired = false
+  renderer = "wiki-renderer"
+  _parent = [
+    jira.FieldConfiguration.instance.Jira_Service_Management_Field_Configuration_for_Project_TS4@s,
+  ]
+}
+jira.FieldConfigurationItem Jira_Service_Management_Field_Configuration_for_Project_TS4_s_Assets__assetfield__c@uuuuuuumuuuuu {
+  id = jira.Field.instance.Assets__assetfield__c
+  isHidden = false
+  isRequired = false
+  description = ""
+  _parent = [
+    jira.FieldConfiguration.instance.Jira_Service_Management_Field_Configuration_for_Project_TS4@s,
+  ]
+}
+jira.FieldConfigurationItem Jira_Service_Management_Field_Configuration_for_Project_TS4_s_Checkboxes__multicheckboxes__c@uuuuuuumuuuuu {
+  id = jira.Field.instance.Checkboxes__multicheckboxes__c
+  isHidden = false
+  isRequired = false
+  description = ""
+  _parent = [
+    jira.FieldConfiguration.instance.Jira_Service_Management_Field_Configuration_for_Project_TS4@s,
+  ]
+}
+jira.FieldConfigurationItem Jira_Service_Management_Field_Configuration_for_Project_TS4_s_Date_of_First_Response__firstresponsedate__c_sssuuuu@uuuuuuumuuuuuuuum {
+  id = jira.Field.instance.Date_of_First_Response__firstresponsedate__c@sssuuuu
+  isHidden = false
+  isRequired = false
+  description = ""
+  _parent = [
+    jira.FieldConfiguration.instance.Jira_Service_Management_Field_Configuration_for_Project_TS4@s,
+  ]
+}
+jira.FieldConfigurationItem Jira_Service_Management_Field_Configuration_for_Project_TS4_s_Date_Picker__datepicker__c_suuuu@uuuuuuumuuuuuum {
+  id = jira.Field.instance.Date_Picker__datepicker__c@suuuu
+  isHidden = false
+  isRequired = false
+  description = ""
+  _parent = [
+    jira.FieldConfiguration.instance.Jira_Service_Management_Field_Configuration_for_Project_TS4@s,
+  ]
+}
+jira.FieldConfigurationItem Jira_Service_Management_Field_Configuration_for_Project_TS4_s_Date_Time_Picker__datetime__c_ssuuuu@uuuuuuumuuuuuuum {
+  id = jira.Field.instance.Date_Time_Picker__datetime__c@ssuuuu
+  isHidden = false
+  isRequired = false
+  description = ""
+  _parent = [
+    jira.FieldConfiguration.instance.Jira_Service_Management_Field_Configuration_for_Project_TS4@s,
+  ]
+}
+jira.FieldConfigurationItem Jira_Service_Management_Field_Configuration_for_Project_TS4_s_Labels__labels__c@uuuuuuumuuuuu {
+  id = jira.Field.instance.Labels__labels__c
+  isHidden = false
+  isRequired = false
+  description = ""
+  _parent = [
+    jira.FieldConfiguration.instance.Jira_Service_Management_Field_Configuration_for_Project_TS4@s,
+  ]
+}
+jira.FieldConfigurationItem Jira_Service_Management_Field_Configuration_for_Project_TS4_s_Days_since_last_comment__dayslastcommented__c_sssuuuu@uuuuuuumuuuuuuuum {
+  id = jira.Field.instance.Days_since_last_comment__dayslastcommented__c@sssuuuu
+  isHidden = false
+  isRequired = false
+  description = ""
+  _parent = [
+    jira.FieldConfiguration.instance.Jira_Service_Management_Field_Configuration_for_Project_TS4@s,
+  ]
+}
+jira.FieldConfigurationItem Jira_Service_Management_Field_Configuration_for_Project_TS4_s_Domain_of_Assignee__assigneedomain__c_ssuuuu@uuuuuuumuuuuuuum {
+  id = jira.Field.instance.Domain_of_Assignee__assigneedomain__c@ssuuuu
+  isHidden = false
+  isRequired = false
+  description = ""
+  _parent = [
+    jira.FieldConfiguration.instance.Jira_Service_Management_Field_Configuration_for_Project_TS4@s,
+  ]
+}
+jira.FieldConfigurationItem Jira_Service_Management_Field_Configuration_for_Project_TS4_s_Domain_of_Reporter__reporterdomain__c_ssuuuu@uuuuuuumuuuuuuum {
+  id = jira.Field.instance.Domain_of_Reporter__reporterdomain__c@ssuuuu
+  isHidden = false
+  isRequired = false
+  description = ""
+  _parent = [
+    jira.FieldConfiguration.instance.Jira_Service_Management_Field_Configuration_for_Project_TS4@s,
+  ]
+}
+jira.FieldConfigurationItem Jira_Service_Management_Field_Configuration_for_Project_TS4_s_Global_Rank__gh_lexo_rank__c_suubbuu@uuuuuuumuuuuuuuum {
+  id = jira.Field.instance.Global_Rank__gh_lexo_rank__c@suubbuu
+  isHidden = false
+  isRequired = false
+  description = ""
+  _parent = [
+    jira.FieldConfiguration.instance.Jira_Service_Management_Field_Configuration_for_Project_TS4@s,
+  ]
+}
+jira.FieldConfigurationItem Jira_Service_Management_Field_Configuration_for_Project_TS4_s_Group_Picker__multiple_groups___multigrouppicker__c_ssjskuuuu@uuuuuuumuuuuuuuuuum {
+  id = jira.Field.instance.Group_Picker__multiple_groups___multigrouppicker__c@ssjskuuuu
+  isHidden = false
+  isRequired = false
+  description = ""
+  _parent = [
+    jira.FieldConfiguration.instance.Jira_Service_Management_Field_Configuration_for_Project_TS4@s,
+  ]
+}
+jira.FieldConfigurationItem Jira_Service_Management_Field_Configuration_for_Project_TS4_s_Group_Picker__single_group___grouppicker__c_ssjskuuuu@uuuuuuumuuuuuuuuuum {
+  id = jira.Field.instance.Group_Picker__single_group___grouppicker__c@ssjskuuuu
+  isHidden = false
+  isRequired = false
+  description = ""
+  _parent = [
+    jira.FieldConfiguration.instance.Jira_Service_Management_Field_Configuration_for_Project_TS4@s,
+  ]
+}
+jira.FieldConfigurationItem Jira_Service_Management_Field_Configuration_for_Project_TS4_s_Last_commented_by_a_User_Flag__lastusercommented__c_sssssuuuu@uuuuuuumuuuuuuuuuum {
+  id = jira.Field.instance.Last_commented_by_a_User_Flag__lastusercommented__c@sssssuuuu
+  isHidden = false
+  isRequired = false
+  description = ""
+  _parent = [
+    jira.FieldConfiguration.instance.Jira_Service_Management_Field_Configuration_for_Project_TS4@s,
+  ]
+}
+jira.FieldConfigurationItem Jira_Service_Management_Field_Configuration_for_Project_TS4_s_Last_public_comment_date__LastCommentDate__c_sssuuuu@uuuuuuumuuuuuuuum {
+  id = jira.Field.instance.Last_public_comment_date__LastCommentDate__c@sssuuuu
+  isHidden = false
+  isRequired = false
+  description = ""
+  _parent = [
+    jira.FieldConfiguration.instance.Jira_Service_Management_Field_Configuration_for_Project_TS4@s,
+  ]
+}
+jira.FieldConfigurationItem Jira_Service_Management_Field_Configuration_for_Project_TS4_s_Message_Custom_Field__for_edit___message__c_sssjskuuuu@uuuuuuumuuuuuuuuuuum {
+  id = jira.Field.instance.Message_Custom_Field__for_edit___message__c@sssjskuuuu
+  isHidden = false
+  isRequired = false
+  description = ""
+  _parent = [
+    jira.FieldConfiguration.instance.Jira_Service_Management_Field_Configuration_for_Project_TS4@s,
+  ]
+}
+jira.FieldConfigurationItem Jira_Service_Management_Field_Configuration_for_Project_TS4_s_Number_Field__float__c_suuuu@uuuuuuumuuuuuum {
+  id = jira.Field.instance.Number_Field__float__c@suuuu
+  isHidden = false
+  isRequired = false
+  description = ""
+  _parent = [
+    jira.FieldConfiguration.instance.Jira_Service_Management_Field_Configuration_for_Project_TS4@s,
+  ]
+}
+jira.FieldConfigurationItem Jira_Service_Management_Field_Configuration_for_Project_TS4_s_Number_of_attachments__attachments__c_ssuuuu@uuuuuuumuuuuuuum {
+  id = jira.Field.instance.Number_of_attachments__attachments__c@ssuuuu
+  isHidden = false
+  isRequired = false
+  description = ""
+  _parent = [
+    jira.FieldConfiguration.instance.Jira_Service_Management_Field_Configuration_for_Project_TS4@s,
+  ]
+}
+jira.FieldConfigurationItem Jira_Service_Management_Field_Configuration_for_Project_TS4_s_Number_of_comments__comments__c_ssuuuu@uuuuuuumuuuuuuum {
+  id = jira.Field.instance.Number_of_comments__comments__c@ssuuuu
+  isHidden = false
+  isRequired = false
+  description = ""
+  _parent = [
+    jira.FieldConfiguration.instance.Jira_Service_Management_Field_Configuration_for_Project_TS4@s,
+  ]
+}
+jira.FieldConfigurationItem Jira_Service_Management_Field_Configuration_for_Project_TS4_s_Paragraph__supports_rich_text___textarea__c_sjsskuuuu@uuuuuuumuuuuuuuuuum {
+  id = jira.Field.instance.Paragraph__supports_rich_text___textarea__c@sjsskuuuu
+  isHidden = false
+  isRequired = false
+  renderer = "text-renderer"
+  description = ""
+  _parent = [
+    jira.FieldConfiguration.instance.Jira_Service_Management_Field_Configuration_for_Project_TS4@s,
+  ]
+}
+jira.FieldConfigurationItem Jira_Service_Management_Field_Configuration_for_Project_TS4_s_Participants_of_an_issue__participants__c_sssuuuu@uuuuuuumuuuuuuuum {
+  id = jira.Field.instance.Participants_of_an_issue__participants__c@sssuuuu
+  isHidden = false
+  isRequired = false
+  description = ""
+  _parent = [
+    jira.FieldConfiguration.instance.Jira_Service_Management_Field_Configuration_for_Project_TS4@s,
+  ]
+}
+jira.FieldConfigurationItem Jira_Service_Management_Field_Configuration_for_Project_TS4_s_Project_Picker__single_project___project__c_ssjskuuuu@uuuuuuumuuuuuuuuuum {
+  id = jira.Field.instance.Project_Picker__single_project___project__c@ssjskuuuu
+  isHidden = false
+  isRequired = false
+  description = ""
+  _parent = [
+    jira.FieldConfiguration.instance.Jira_Service_Management_Field_Configuration_for_Project_TS4@s,
+  ]
+}
+jira.FieldConfigurationItem Jira_Service_Management_Field_Configuration_for_Project_TS4_s_Radio_Buttons__radiobuttons__c_suuuu@uuuuuuumuuuuuum {
+  id = jira.Field.instance.Radio_Buttons__radiobuttons__c@suuuu
+  isHidden = false
+  isRequired = false
+  description = ""
+  _parent = [
+    jira.FieldConfiguration.instance.Jira_Service_Management_Field_Configuration_for_Project_TS4@s,
+  ]
+}
+jira.FieldConfigurationItem Jira_Service_Management_Field_Configuration_for_Project_TS4_s_Select_List__cascading___cascadingselect__c_ssjkuuuu@uuuuuuumuuuuuuuuum {
+  id = jira.Field.instance.Select_List__cascading___cascadingselect__c@ssjkuuuu
+  isHidden = false
+  isRequired = false
+  description = ""
+  _parent = [
+    jira.FieldConfiguration.instance.Jira_Service_Management_Field_Configuration_for_Project_TS4@s,
+  ]
+}
+jira.FieldConfigurationItem Jira_Service_Management_Field_Configuration_for_Project_TS4_s_Select_List__multiple_choices___multiselect__c_ssjskuuuu@uuuuuuumuuuuuuuuuum {
+  id = jira.Field.instance.Select_List__multiple_choices___multiselect__c@ssjskuuuu
+  isHidden = false
+  isRequired = false
+  description = ""
+  _parent = [
+    jira.FieldConfiguration.instance.Jira_Service_Management_Field_Configuration_for_Project_TS4@s,
+  ]
+}
+jira.FieldConfigurationItem Jira_Service_Management_Field_Configuration_for_Project_TS4_s_Select_List__single_choice___select__c_ssjskuuuu@uuuuuuumuuuuuuuuuum {
+  id = jira.Field.instance.Select_List__single_choice___select__c@ssjskuuuu
+  isHidden = false
+  isRequired = false
+  description = ""
+  _parent = [
+    jira.FieldConfiguration.instance.Jira_Service_Management_Field_Configuration_for_Project_TS4@s,
+  ]
+}
+jira.FieldConfigurationItem Jira_Service_Management_Field_Configuration_for_Project_TS4_s_Short_text__plain_text_only___textfield__c_ssjsskuuuu@uuuuuuumuuuuuuuuuuum {
+  id = jira.Field.instance.Short_text__plain_text_only___textfield__c@ssjsskuuuu
+  isHidden = false
+  isRequired = false
+  renderer = "text-renderer"
+  description = ""
+  _parent = [
+    jira.FieldConfiguration.instance.Jira_Service_Management_Field_Configuration_for_Project_TS4@s,
+  ]
+}
+jira.FieldConfigurationItem Jira_Service_Management_Field_Configuration_for_Project_TS4_s_Text_Field__read_only_asd__readonlyfield__c_ssjskuuuu@uuuuuuumuuuuuuuuuum {
+  id = jira.Field.instance.Text_Field__read_only_asd__readonlyfield__c@ssjskuuuu
+  isHidden = false
+  isRequired = false
+  renderer = "text-renderer"
+  description = ""
+  _parent = [
+    jira.FieldConfiguration.instance.Jira_Service_Management_Field_Configuration_for_Project_TS4@s,
+  ]
+}
+jira.FieldConfigurationItem Jira_Service_Management_Field_Configuration_for_Project_TS4_s_Time_in_Status__timeinstatus__c_ssuuuu@uuuuuuumuuuuuuum {
+  id = jira.Field.instance.Time_in_Status__timeinstatus__c@ssuuuu
+  isHidden = false
+  isRequired = false
+  description = ""
+  _parent = [
+    jira.FieldConfiguration.instance.Jira_Service_Management_Field_Configuration_for_Project_TS4@s,
+  ]
+}
+jira.FieldConfigurationItem Jira_Service_Management_Field_Configuration_for_Project_TS4_s_URL_Field__url__c_suuuu@uuuuuuumuuuuuum {
+  id = jira.Field.instance.URL_Field__url__c@suuuu
+  isHidden = false
+  isRequired = false
+  description = ""
+  _parent = [
+    jira.FieldConfiguration.instance.Jira_Service_Management_Field_Configuration_for_Project_TS4@s,
+  ]
+}
+jira.FieldConfigurationItem Jira_Service_Management_Field_Configuration_for_Project_TS4_s_User_Picker__multiple_users___multiuserpicker__c_ssjskuuuu@uuuuuuumuuuuuuuuuum {
+  id = jira.Field.instance.User_Picker__multiple_users___multiuserpicker__c@ssjskuuuu
+  isHidden = false
+  isRequired = false
+  description = ""
+  _parent = [
+    jira.FieldConfiguration.instance.Jira_Service_Management_Field_Configuration_for_Project_TS4@s,
+  ]
+}
+jira.FieldConfigurationItem Jira_Service_Management_Field_Configuration_for_Project_TS4_s_User_Property_Field____255_characters___userproperty__c_sssjxsskuuuu@uuuuuuumuuuuuuuuuuuuum {
+  id = jira.Field.instance.User_Property_Field____255_characters___userproperty__c@sssjxsskuuuu
+  isHidden = false
+  isRequired = false
+  description = ""
+  _parent = [
+    jira.FieldConfiguration.instance.Jira_Service_Management_Field_Configuration_for_Project_TS4@s,
+  ]
+}
+jira.FieldConfigurationItem Jira_Service_Management_Field_Configuration_for_Project_TS4_s_Username_of_last_updater_or_commenter__lastupdaterorcommenter__c_sssssuuuu@uuuuuuumuuuuuuuuuum {
+  id = jira.Field.instance.Username_of_last_updater_or_commenter__lastupdaterorcommenter__c@sssssuuuu
+  isHidden = false
+  isRequired = false
+  description = ""
+  _parent = [
+    jira.FieldConfiguration.instance.Jira_Service_Management_Field_Configuration_for_Project_TS4@s,
+  ]
+}
+jira.FieldConfigurationItem Jira_Service_Management_Field_Configuration_for_Project_TS4_s_Version_Picker__multiple_versions___multiversion__c_ssjskuuuu@uuuuuuumuuuuuuuuuum {
+  id = jira.Field.instance.Version_Picker__multiple_versions___multiversion__c@ssjskuuuu
+  isHidden = false
+  isRequired = false
+  description = ""
+  _parent = [
+    jira.FieldConfiguration.instance.Jira_Service_Management_Field_Configuration_for_Project_TS4@s,
+  ]
+}
+jira.FieldConfigurationItem Jira_Service_Management_Field_Configuration_for_Project_TS4_s_Version_Picker__single_version___version__c_ssjskuuuu@uuuuuuumuuuuuuuuuum {
+  id = jira.Field.instance.Version_Picker__single_version___version__c@ssjskuuuu
+  isHidden = false
+  isRequired = false
+  description = ""
+  _parent = [
+    jira.FieldConfiguration.instance.Jira_Service_Management_Field_Configuration_for_Project_TS4@s,
+  ]
+}
+jira.FieldConfigurationItem Jira_Service_Management_Field_Configuration_for_Project_TS4_s_testDesc1__multicheckboxes__c@uuuuuuumuuuuu {
+  id = jira.Field.instance.testDesc1__multicheckboxes__c
+  isHidden = false
+  isRequired = false
+  description = ""
+  _parent = [
+    jira.FieldConfiguration.instance.Jira_Service_Management_Field_Configuration_for_Project_TS4@s,
+  ]
+}
+jira.FieldConfigurationItem Jira_Service_Management_Field_Configuration_for_Project_TS4_s_testDesc2__multicheckboxes__c@uuuuuuumuuuuu {
+  id = jira.Field.instance.testDesc2__multicheckboxes__c
+  description = "desc1"
+  isHidden = false
+  isRequired = false
+  _parent = [
+    jira.FieldConfiguration.instance.Jira_Service_Management_Field_Configuration_for_Project_TS4@s,
+  ]
+}
+jira.FieldConfigurationItem Jira_Service_Management_Field_Configuration_for_Project_TS4_s_Flagged3__multicheckboxes__c@uuuuuuumuuuuu {
+  id = jira.Field.instance.Flagged3__multicheckboxes__c
+  description = "Allows to flag issues with impediments."
+  isHidden = false
+  isRequired = false
+  _parent = [
+    jira.FieldConfiguration.instance.Jira_Service_Management_Field_Configuration_for_Project_TS4@s,
+  ]
+}
+jira.FieldConfigurationItem Jira_Service_Management_Field_Configuration_for_Project_TS4_s_testSelectList6__cascadingselect__c@uuuuuuumuuuuu {
+  id = jira.Field.instance.testSelectList6__cascadingselect__c
+  description = "desc!2"
+  isHidden = false
+  isRequired = false
+  _parent = [
+    jira.FieldConfiguration.instance.Jira_Service_Management_Field_Configuration_for_Project_TS4@s,
+  ]
+}
+jira.FieldConfigurationItem Jira_Service_Management_Field_Configuration_for_Project_TS4_s_testSelectList7__cascadingselect__c@uuuuuuumuuuuu {
+  id = jira.Field.instance.testSelectList7__cascadingselect__c
+  description = "desc!2"
+  isHidden = false
+  isRequired = false
+  _parent = [
+    jira.FieldConfiguration.instance.Jira_Service_Management_Field_Configuration_for_Project_TS4@s,
+  ]
+}
+jira.FieldConfigurationItem Jira_Service_Management_Field_Configuration_for_Project_TS4_s_testSelectList10__cascadingselect__c@uuuuuuumuuuuu {
+  id = jira.Field.instance.testSelectList10__cascadingselect__c
+  description = "desc!2"
+  isHidden = false
+  isRequired = false
+  _parent = [
+    jira.FieldConfiguration.instance.Jira_Service_Management_Field_Configuration_for_Project_TS4@s,
+  ]
+}
+jira.FieldConfigurationItem Jira_Service_Management_Field_Configuration_for_Project_TS4_s_Number_Field_Name__float__c_ssuuuu@uuuuuuumuuuuuuum {
+  id = jira.Field.instance.Number_Field_Name__float__c@ssuuuu
+  isHidden = false
+  isRequired = false
+  description = ""
+  _parent = [
+    jira.FieldConfiguration.instance.Jira_Service_Management_Field_Configuration_for_Project_TS4@s,
+  ]
+}
+jira.FieldConfigurationItem Jira_Service_Management_Field_Configuration_for_Project_TS4_s_Key__float__c@uuuuuuumuuuuu {
+  id = jira.Field.instance.Key__float__c
+  isHidden = false
+  isRequired = false
+  description = ""
+  _parent = [
+    jira.FieldConfiguration.instance.Jira_Service_Management_Field_Configuration_for_Project_TS4@s,
+  ]
+}
+jira.FieldConfigurationItem Jira_Service_Management_Field_Configuration_for_Project_TS4_s_Key__labels__c@uuuuuuumuuuuu {
+  id = jira.Field.instance.Key__labels__c
+  isHidden = false
+  isRequired = false
+  description = ""
+  _parent = [
+    jira.FieldConfiguration.instance.Jira_Service_Management_Field_Configuration_for_Project_TS4@s,
+  ]
+}
+jira.FieldConfigurationItem Jira_Service_Management_Field_Configuration_for_Project_TS4_s_testSelectList11__cascadingselect__c@uuuuuuumuuuuu {
+  id = jira.Field.instance.testSelectList11__cascadingselect__c
+  description = "desc!2"
+  isHidden = false
+  isRequired = false
+  _parent = [
+    jira.FieldConfiguration.instance.Jira_Service_Management_Field_Configuration_for_Project_TS4@s,
+  ]
+}
+jira.FieldConfigurationItem Jira_Service_Management_Field_Configuration_for_Project_TS4_s_How_many_times_has_this_happened_before__float__c_ssssssuuuu@uuuuuuumuuuuuuuuuuum {
+  id = jira.Field.instance.How_many_times_has_this_happened_before__float__c@ssssssuuuu
+  description = ""
+  isHidden = false
+  isRequired = false
+  _parent = [
+    jira.FieldConfiguration.instance.Jira_Service_Management_Field_Configuration_for_Project_TS4@s,
+  ]
+}
+jira.FieldConfigurationItem Jira_Service_Management_Field_Configuration_for_Project_TS4_s_a_b__float__c_ruuuu@uuuuuuumuuuuuum {
+  id = jira.Field.instance.a_b__float__c@ruuuu
+  isHidden = false
+  isRequired = false
+  description = ""
+  _parent = [
+    jira.FieldConfiguration.instance.Jira_Service_Management_Field_Configuration_for_Project_TS4@s,
+  ]
+}
+jira.FieldConfigurationItem Jira_Service_Management_Field_Configuration_for_Project_TS4_s_testNumber2__float__c@uuuuuuumuuuuu {
+  id = jira.Field.instance.testNumber2__float__c
+  isHidden = false
+  isRequired = false
+  description = ""
+  _parent = [
+    jira.FieldConfiguration.instance.Jira_Service_Management_Field_Configuration_for_Project_TS4@s,
+  ]
+}
+jira.FieldConfigurationItem Jira_Service_Management_Field_Configuration_for_Project_TS4_s_testNumber2__multicheckboxes__c@uuuuuuumuuuuu {
+  id = jira.Field.instance.testNumber2__multicheckboxes__c
+  isHidden = false
+  isRequired = false
+  description = ""
+  _parent = [
+    jira.FieldConfiguration.instance.Jira_Service_Management_Field_Configuration_for_Project_TS4@s,
+  ]
+}
+jira.FieldConfigurationItem Jira_Service_Management_Field_Configuration_for_Project_TS4_s_testCheckbox4__multicheckboxes__c@uuuuuuumuuuuu {
+  id = jira.Field.instance.testCheckbox4__multicheckboxes__c
+  isHidden = false
+  isRequired = false
+  description = ""
+  _parent = [
+    jira.FieldConfiguration.instance.Jira_Service_Management_Field_Configuration_for_Project_TS4@s,
+  ]
+}
+jira.FieldConfigurationItem Jira_Service_Management_Field_Configuration_for_Project_TS4_s_testBug__multicheckboxes__c@uuuuuuumuuuuu {
+  id = jira.Field.instance.testBug__multicheckboxes__c
+  isHidden = false
+  isRequired = false
+  description = ""
+  _parent = [
+    jira.FieldConfiguration.instance.Jira_Service_Management_Field_Configuration_for_Project_TS4@s,
+  ]
+}
+jira.FieldConfigurationItem Jira_Service_Management_Field_Configuration_for_Project_TS4_s_testDefaultValue__multicheckboxes__c@uuuuuuumuuuuu {
+  id = jira.Field.instance.testDefaultValue__multicheckboxes__c
+  isHidden = false
+  isRequired = false
+  description = ""
+  _parent = [
+    jira.FieldConfiguration.instance.Jira_Service_Management_Field_Configuration_for_Project_TS4@s,
+  ]
+}
+jira.FieldConfigurationItem Jira_Service_Management_Field_Configuration_for_Project_TS4_s_testGlobalIssues__multicheckboxes__c@uuuuuuumuuuuu {
+  id = jira.Field.instance.testGlobalIssues__multicheckboxes__c
+  isHidden = false
+  isRequired = false
+  description = ""
+  _parent = [
+    jira.FieldConfiguration.instance.Jira_Service_Management_Field_Configuration_for_Project_TS4@s,
+  ]
+}
+jira.FieldConfigurationItem Jira_Service_Management_Field_Configuration_for_Project_TS4_s_NewCustomFieldLior__multicheckboxes__c@uuuuuuumuuuuu {
+  id = jira.Field.instance.NewCustomFieldLior__multicheckboxes__c
+  isHidden = false
+  isRequired = false
+  description = ""
+  _parent = [
+    jira.FieldConfiguration.instance.Jira_Service_Management_Field_Configuration_for_Project_TS4@s,
+  ]
+}
+jira.FieldConfigurationItem Jira_Service_Management_Field_Configuration_for_Project_TS4_s_testetst__multicheckboxes__c@uuuuuuumuuuuu {
+  id = jira.Field.instance.testetst__multicheckboxes__c
+  isHidden = false
+  isRequired = false
+  description = ""
+  _parent = [
+    jira.FieldConfiguration.instance.Jira_Service_Management_Field_Configuration_for_Project_TS4@s,
+  ]
+}
+jira.FieldConfigurationItem Jira_Service_Management_Field_Configuration_for_Project_TS4_s_Compliance_Type__select__c_suuuu@uuuuuuumuuuuuum {
+  id = jira.Field.instance.Compliance_Type__select__c@suuuu
+  description = ""
+  isHidden = false
+  isRequired = false
+  _parent = [
+    jira.FieldConfiguration.instance.Jira_Service_Management_Field_Configuration_for_Project_TS4@s,
+  ]
+}
+jira.FieldConfigurationItem Jira_Service_Management_Field_Configuration_for_Project_TS4_s_guytest__float__c@uuuuuuumuuuuu {
+  id = jira.Field.instance.guytest__float__c
+  isHidden = false
+  isRequired = false
+  description = ""
+  _parent = [
+    jira.FieldConfiguration.instance.Jira_Service_Management_Field_Configuration_for_Project_TS4@s,
+  ]
+}
+jira.FieldConfigurationItem Jira_Service_Management_Field_Configuration_for_Project_TS4_s_guytest__float__c__float__c_ssssuuuu@uuuuuuumuuuuuuuuum {
+  id = jira.Field.instance.guytest__float__c__float__c@ssssuuuu
+  isHidden = false
+  isRequired = false
+  description = ""
+  _parent = [
+    jira.FieldConfiguration.instance.Jira_Service_Management_Field_Configuration_for_Project_TS4@s,
+  ]
+}
+jira.FieldConfigurationItem Jira_Service_Management_Field_Configuration_for_Project_TS4_s_shay_multiuser_picker__multiuserpicker__c_ssuuuu@uuuuuuumuuuuuuum {
+  id = jira.Field.instance.shay_multiuser_picker__multiuserpicker__c@ssuuuu
+  isHidden = false
+  isRequired = false
+  description = ""
+  _parent = [
+    jira.FieldConfiguration.instance.Jira_Service_Management_Field_Configuration_for_Project_TS4@s,
+  ]
+}
+jira.FieldConfigurationItem Jira_Service_Management_Field_Configuration_for_Project_TS4_s_shay_date_picker__datepicker__c_ssuuuu@uuuuuuumuuuuuuum {
+  id = jira.Field.instance.shay_date_picker__datepicker__c@ssuuuu
+  isHidden = false
+  isRequired = false
+  description = ""
+  _parent = [
+    jira.FieldConfiguration.instance.Jira_Service_Management_Field_Configuration_for_Project_TS4@s,
+  ]
+}
+jira.FieldConfigurationItem Jira_Service_Management_Field_Configuration_for_Project_TS4_s_shay_date_time_picker__datetime__c_sssuuuu@uuuuuuumuuuuuuuum {
+  id = jira.Field.instance.shay_date_time_picker__datetime__c@sssuuuu
+  isHidden = false
+  isRequired = false
+  description = ""
+  _parent = [
+    jira.FieldConfiguration.instance.Jira_Service_Management_Field_Configuration_for_Project_TS4@s,
+  ]
+}
+jira.FieldConfigurationItem Jira_Service_Management_Field_Configuration_for_Project_TS4_s_shay_url__url__c_suuuu@uuuuuuumuuuuuum {
+  id = jira.Field.instance.shay_url__url__c@suuuu
+  isHidden = false
+  isRequired = false
+  description = ""
+  _parent = [
+    jira.FieldConfiguration.instance.Jira_Service_Management_Field_Configuration_for_Project_TS4@s,
+  ]
+}
+jira.FieldConfigurationItem Jira_Service_Management_Field_Configuration_for_Project_TS4_s_shay_project_picker__project__c_ssuuuu@uuuuuuumuuuuuuum {
+  id = jira.Field.instance.shay_project_picker__project__c@ssuuuu
+  isHidden = false
+  isRequired = false
+  description = ""
+  _parent = [
+    jira.FieldConfiguration.instance.Jira_Service_Management_Field_Configuration_for_Project_TS4@s,
+  ]
+}
+jira.FieldConfigurationItem Jira_Service_Management_Field_Configuration_for_Project_TS4_s_shay_number__float__c_suuuu@uuuuuuumuuuuuum {
+  id = jira.Field.instance.shay_number__float__c@suuuu
+  isHidden = false
+  isRequired = false
+  description = ""
+  _parent = [
+    jira.FieldConfiguration.instance.Jira_Service_Management_Field_Configuration_for_Project_TS4@s,
+  ]
+}
+jira.FieldConfigurationItem Jira_Service_Management_Field_Configuration_for_Project_TS4_s_shay_labels__labels__c_suuuu@uuuuuuumuuuuuum {
+  id = jira.Field.instance.shay_labels__labels__c@suuuu
+  isHidden = false
+  isRequired = false
+  description = ""
+  _parent = [
+    jira.FieldConfiguration.instance.Jira_Service_Management_Field_Configuration_for_Project_TS4@s,
+  ]
+}
+jira.FieldConfigurationItem Jira_Service_Management_Field_Configuration_for_Project_TS4_s_test__readonlyfield__c@uuuuuuumuuuuu {
+  id = jira.Field.instance.test__readonlyfield__c
+  isHidden = false
+  isRequired = false
+  renderer = "text-renderer"
+  description = ""
+  _parent = [
+    jira.FieldConfiguration.instance.Jira_Service_Management_Field_Configuration_for_Project_TS4@s,
+  ]
+}
+jira.FieldConfigurationItem Jira_Service_Management_Field_Configuration_for_Project_TS4_s_testReadOnly__readonlyfield__c@uuuuuuumuuuuu {
+  id = jira.Field.instance.testReadOnly__readonlyfield__c
+  isHidden = false
+  isRequired = false
+  renderer = "text-renderer"
+  description = ""
+  _parent = [
+    jira.FieldConfiguration.instance.Jira_Service_Management_Field_Configuration_for_Project_TS4@s,
+  ]
+}
+jira.FieldConfigurationItem Jira_Service_Management_Field_Configuration_for_Project_TS4_s_shay_user_picker__userpicker__c_ssuuuu@uuuuuuumuuuuuuum {
+  id = jira.Field.instance.shay_user_picker__userpicker__c@ssuuuu
+  isHidden = false
+  isRequired = false
+  description = ""
+  _parent = [
+    jira.FieldConfiguration.instance.Jira_Service_Management_Field_Configuration_for_Project_TS4@s,
+  ]
+}
+jira.FieldConfigurationItem Jira_Service_Management_Field_Configuration_for_Project_TS4_s_testSingleUser__userpicker__c@uuuuuuumuuuuu {
+  id = jira.Field.instance.testSingleUser__userpicker__c
+  isHidden = false
+  isRequired = false
+  description = ""
+  _parent = [
+    jira.FieldConfiguration.instance.Jira_Service_Management_Field_Configuration_for_Project_TS4@s,
+  ]
+}
+jira.FieldConfigurationItem Jira_Service_Management_Field_Configuration_for_Project_TS4_s_Change_requires_downtime___select__c_ssauuuu@uuuuuuumuuuuuuuum {
+  id = jira.Field.instance.Change_requires_downtime___select__c@ssauuuu
+  description = '''
+Does this change require downtime?
+If the answer is _Yes_, we need to coordinate this change with CS/Sales (in case there are important demos).
+We also need to update StatusPage in advance, and maybe send emails to a subeset (e.g. paying) customers.
+'''
+  isHidden = false
+  isRequired = false
+  _parent = [
+    jira.FieldConfiguration.instance.Jira_Service_Management_Field_Configuration_for_Project_TS4@s,
+  ]
+}
+jira.FieldConfigurationItem Jira_Service_Management_Field_Configuration_for_Project_TS4_s_testUserSelect2__userpicker__c@uuuuuuumuuuuu {
+  id = jira.Field.instance.testUserSelect2__userpicker__c
+  description = ""
+  isHidden = false
+  isRequired = false
+  _parent = [
+    jira.FieldConfiguration.instance.Jira_Service_Management_Field_Configuration_for_Project_TS4@s,
+  ]
+}
+jira.FieldConfigurationItem Jira_Service_Management_Field_Configuration_for_Project_TS4_s_SLA_Level__radiobuttons__c_suuuu@uuuuuuumuuuuuum {
+  id = jira.Field.instance.SLA_Level__radiobuttons__c@suuuu
+  description = ""
+  isHidden = false
+  isRequired = false
+  _parent = [
+    jira.FieldConfiguration.instance.Jira_Service_Management_Field_Configuration_for_Project_TS4@s,
+  ]
+}

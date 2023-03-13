@@ -1,0 +1,7 @@
+jira.SecurityScheme aaa {
+  name = "aaa"
+  description = "ddd"
+  levels = [
+    jira.SecurityLevel.instance.aaa__test,
+  ]
+}

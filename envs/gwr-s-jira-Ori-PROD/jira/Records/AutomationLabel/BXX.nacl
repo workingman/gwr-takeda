@@ -1,0 +1,4 @@
+jira.AutomationLabel BXX {
+  name = "BXX"
+  color = "R300"
+}

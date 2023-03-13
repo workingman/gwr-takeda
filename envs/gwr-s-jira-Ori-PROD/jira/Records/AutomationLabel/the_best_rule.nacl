@@ -1,0 +1,4 @@
+jira.AutomationLabel the_best_rule@s {
+  name = "the best rule"
+  color = "G300"
+}

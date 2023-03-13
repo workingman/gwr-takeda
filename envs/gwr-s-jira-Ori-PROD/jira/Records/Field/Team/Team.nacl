@@ -1,0 +1,10 @@
+jira.Field Team__rm_teams_custom_field_team__c@uubbbbuu {
+  name = "Team"
+  description = ""
+  isLocked = true
+  searcherKey = "com.atlassian.teams:rm-teams-custom-field-team-searcher"
+  type = "com.atlassian.teams:rm-teams-custom-field-team"
+  contexts = [
+    jira.CustomFieldContext.instance.Team__rm_teams_custom_field_team__c_uubbbbuu_Default_Configuration_Scheme_for_Team@uuuuuuuumussss,
+  ]
+}

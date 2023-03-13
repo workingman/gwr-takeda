@@ -1,0 +1,4 @@
+jira.AutomationLabel shay_label_edit@s {
+  name = "shay label edit"
+  color = "G500"
+}

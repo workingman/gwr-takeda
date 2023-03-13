@@ -1,0 +1,5 @@
+jira.Status considered_for_development@s {
+  name = "Considered for Development"
+  statusCategory = jira.StatusCategory.instance.To_Do@s
+  description = ""
+}

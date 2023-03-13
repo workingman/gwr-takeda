@@ -1,0 +1,9 @@
+jira.Field testUserSelect2__userpicker__c {
+  name = "testUserSelect2"
+  description = ""
+  searcherKey = "com.atlassian.jira.plugin.system.customfieldtypes:userpickergroupsearcher"
+  type = "com.atlassian.jira.plugin.system.customfieldtypes:userpicker"
+  contexts = [
+    jira.CustomFieldContext.instance.testUserSelect2__userpicker__c_Default_Configuration_Scheme_for_testUserSelect@uuuuussss,
+  ]
+}

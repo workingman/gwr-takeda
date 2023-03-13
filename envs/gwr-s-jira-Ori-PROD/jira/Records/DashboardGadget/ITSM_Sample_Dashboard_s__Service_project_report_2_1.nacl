@@ -1,0 +1,20 @@
+jira.DashboardGadget ITSM_Sample_Dashboard_s__Service_project_report_2_1@uumuussuu {
+  moduleKey = "com.atlassian.servicedesk.servicedesk-reports-plugin:custom-report-dashboard-item"
+  color = "blue"
+  position = {
+    row = 1
+    column = 2
+  }
+  title = "Service project report"
+  properties = {
+    intervalValue = "1"
+    isConfigured = true
+    isCustom = true
+    projectValue = "ITSAMPLE"
+    refresh = "false"
+    reportValue = "11"
+  }
+  _parent = [
+    jira.Dashboard.instance.ITSM_Sample_Dashboard@s,
+  ]
+}

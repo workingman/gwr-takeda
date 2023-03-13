@@ -1,0 +1,20 @@
+jira.DashboardGadget ITSM_Sample_Dashboard_s__Heat_Map_2_2@uumuusuu {
+  uri = "rest/gadgets/1.0/g/com.atlassian.jira.gadgets:heat-map-gadget/gadgets/heatmap-gadget.xml"
+  color = "blue"
+  position = {
+    row = 2
+    column = 2
+  }
+  title = "Heat Map"
+  properties = {
+    config = {
+      isConfigured = "true"
+      refresh = "false"
+      projectOrFilterId = "project-10038"
+      statType = "statuses"
+    }
+  }
+  _parent = [
+    jira.Dashboard.instance.ITSM_Sample_Dashboard@s,
+  ]
+}

@@ -1,0 +1,8 @@
+jira.ProjectComponent test_proj_two_b__TPT_Comp2@uumuub {
+  description = "The second test component"
+  name = "TPT-Comp2"
+  assigneeType = "UNASSIGNED"
+  _parent = [
+    jira.Project.instance.test_proj_two@b,
+  ]
+}

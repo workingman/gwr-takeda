@@ -1,0 +1,22 @@
+jira.DashboardGadget Custom_dashboard_s__Average_Age_Chart_2_0@umuussuu {
+  uri = "rest/gadgets/1.0/g/com.atlassian.jira.gadgets:average-age-chart-gadget/gadgets/average-age-gadget.xml"
+  color = "blue"
+  position = {
+    row = 0
+    column = 2
+  }
+  title = "Average Age Chart"
+  properties = {
+    config = {
+      isConfigured = "true"
+      isPopup = "false"
+      refresh = "false"
+      periodName = "daily"
+      projectOrFilterId = "project-10001"
+      daysprevious = "15"
+    }
+  }
+  _parent = [
+    jira.Dashboard.instance.Custom_dashboard@s,
+  ]
+}

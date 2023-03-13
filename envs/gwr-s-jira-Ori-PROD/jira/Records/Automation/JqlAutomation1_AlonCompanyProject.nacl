@@ -1,0 +1,109 @@
+jira.Automation JqlAutomation1_AlonCompanyProject {
+  name = "JqlAutomation1"
+  state = "ENABLED"
+  description = "qqqqq"
+  authorAccountId = {
+    id = "616e3f77e79ff6006f1eca7f"
+    displayName = "Shir Reifenberg"
+  }
+  actor = {
+    type = "ACCOUNT_ID"
+    value = {
+      id = "557058:f58131cb-b67d-43c7-b30d-6b58d40bd077"
+      displayName = "Automation for Jira"
+    }
+  }
+  trigger = {
+    component = "TRIGGER"
+    schemaVersion = 1
+    type = "jira.issue.event.trigger:moved"
+    value = {
+      eventKey = "jira:issue_updated"
+      issueEvent = "issue_moved"
+      sourceProject = jira.Project.instance.Gil_s_Project@ts
+      targetProject = "-1999"
+    }
+    children = [
+    ]
+    conditions = [
+    ]
+  }
+  components = [
+    {
+      component = "BRANCH"
+      schemaVersion = 1
+      type = "jira.issue.related"
+      value = {
+        relatedType = "jql"
+        jql = "${ jira.Field.instance.Priority__priority } = ${ jira.Priority.instance.Highest.name }"
+        linkTypes = [
+        ]
+        onlyUpdatedIssues = false
+        similarityLimit = 40
+        compareValue = 0
+      }
+      children = [
+        {
+          component = "CONDITION"
+          schemaVersion = 1
+          type = "jira.jql.condition"
+          children = [
+          ]
+          conditions = [
+          ]
+          rawValue = "statusCategory != Done"
+        },
+        {
+          component = "ACTION"
+          schemaVersion = 1
+          type = "jira.issue.comment"
+          value = {
+            comment = "Wow!"
+            publicComment = false
+            sendNotifications = true
+            addCommentOnce = true
+          }
+          children = [
+          ]
+          conditions = [
+          ]
+        },
+      ]
+      conditions = [
+      ]
+    },
+    {
+      component = "ACTION"
+      schemaVersion = 1
+      type = "jira.issue.comment"
+      value = {
+        comment = "Wow???"
+        publicComment = false
+        sendNotifications = true
+        addCommentOnce = true
+      }
+      children = [
+      ]
+      conditions = [
+      ]
+    },
+  ]
+  canOtherRuleTrigger = false
+  notifyOnError = "FIRSTERROR"
+  projects = [
+    {
+      projectId = jira.Project.instance.AlonCompanyProject
+    },
+  ]
+  labels = [
+  ]
+  tags = [
+    {
+      tagType = "IS_RULE_UPDATED"
+      tagValue = "true"
+    },
+  ]
+  writeAccessType = "UNRESTRICTED"
+  collaborators = [
+  ]
+}

@@ -1,0 +1,109 @@
+jira.Automation shirTestProjcetRole {
+  name = "shirTestProjcetRole"
+  state = "ENABLED"
+  authorAccountId = {
+    id = "616e3f77e79ff6006f1eca7f"
+    displayName = "Shir Reifenberg"
+  }
+  actor = {
+    type = "ACCOUNT_ID"
+    value = {
+      id = "557058:f58131cb-b67d-43c7-b30d-6b58d40bd077"
+      displayName = "Automation for Jira"
+    }
+  }
+  trigger = {
+    component = "TRIGGER"
+    schemaVersion = 1
+    type = "jira.issue.event.trigger:created"
+    value = {
+      eventKey = "jira:issue_created"
+      issueEvent = "issue_created"
+    }
+    children = [
+    ]
+    conditions = [
+    ]
+  }
+  components = [
+    {
+      component = "ACTION"
+      schemaVersion = 3
+      type = "jira.issue.assign"
+      value = {
+        assignType = "ROLE"
+        role = {
+          type = "NAME"
+          value = jira.ProjectRole.instance.atlassian_addons_project_access@b.name
+        }
+        excludedUsers = [
+        ]
+        userList = [
+        ]
+      }
+      children = [
+      ]
+      conditions = [
+      ]
+    },
+    {
+      component = "ACTION"
+      schemaVersion = 3
+      type = "jira.worklog.add"
+      value = {
+        timeSpent = "10m"
+        dateStarted = {
+          type = "SMART"
+          value = "{{now}}"
+        }
+        description = "bla bla"
+        adjustEstimate = "ADJUST_AUTOMATICALLY"
+        visibility = {
+          label = "Service Desk Customers (Role)"
+          value = "Service Desk Customers"
+          type = "role"
+        }
+      }
+      children = [
+      ]
+      conditions = [
+      ]
+    },
+    {
+      component = "ACTION"
+      schemaVersion = 3
+      type = "jira.issue.assign"
+      value = {
+        assignType = "GROUP"
+        jql = "${ jira.Field.instance.Status__status } = '${ jira.Status.instance.backlog.name }'"
+        group = {
+          type = "ID"
+          value = jira.Group.instance.jira_administrators@b
+        }
+        excludedUsers = [
+        ]
+        userList = [
+        ]
+      }
+      children = [
+      ]
+      conditions = [
+      ]
+    },
+  ]
+  canOtherRuleTrigger = false
+  notifyOnError = "FIRSTERROR"
+  projects = [
+  ]
+  labels = [
+  ]
+  tags = [
+    {
+      tagType = "IS_RULE_UPDATED"
+      tagValue = "true"
+    },
+  ]
+  writeAccessType = "UNRESTRICTED"
+  collaborators = [
+  ]
+}

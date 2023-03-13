@@ -1,0 +1,6 @@
+jira.IssueType Questions_for_facilities@s {
+  description = "Send us a question or make a general request."
+  name = "Questions for facilities"
+  untranslatedName = "Questions for facilities"
+  hierarchyLevel = 0
+}

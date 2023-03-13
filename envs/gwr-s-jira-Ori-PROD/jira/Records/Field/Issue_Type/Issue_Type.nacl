@@ -1,0 +1,8 @@
+jira.Field Issue_Type__issuetype@suu {
+  name = "Issue Type"
+  schema = {
+    type = "issuetype"
+    system = "issuetype"
+  }
+  description = ""
+}

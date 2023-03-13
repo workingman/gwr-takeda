@@ -1,0 +1,9 @@
+jira.Field Log_Work__array@suu {
+  name = "Log Work"
+  schema = {
+    type = "array"
+    items = "worklog"
+    system = "worklog"
+  }
+  description = ""
+}

@@ -1,0 +1,117 @@
+jira.Automation shirMultipleIssue_userCondition_sendEmail_AlonCompanyProject {
+  name = "shirMultipleIssue_userCondition_sendEmail"
+  state = "ENABLED"
+  authorAccountId = {
+    id = "616e3f77e79ff6006f1eca7f"
+    displayName = "Shir Reifenberg"
+  }
+  actor = {
+    type = "ACCOUNT_ID"
+    value = {
+      id = "557058:f58131cb-b67d-43c7-b30d-6b58d40bd077"
+      displayName = "Automation for Jira"
+    }
+  }
+  trigger = {
+    component = "TRIGGER"
+    schemaVersion = 1
+    type = "jira.multiple.issue.event"
+    value = {
+      events = [
+        {
+          key = "jira:issue_deleted"
+          event = "issue_deleted"
+          system = false
+        },
+        {
+          key = "jira:issue_updated"
+          event = "issue_moved"
+          system = false
+        },
+      ]
+    }
+    children = [
+    ]
+    conditions = [
+    ]
+  }
+  components = [
+    {
+      component = "CONDITION"
+      schemaVersion = 4
+      type = "jira.user.condition"
+      value = {
+        conditions = [
+          {
+            field = jira.Field.instance.Who_is_moving___multiuserpicker__c@ssauuuu
+            check = "NOT_IN_GROUP"
+            criteria = [
+              {
+                type = "ID"
+                value = {
+                  id = jira.Group.instance.jira_administrators@b
+                }
+              },
+            ]
+          },
+        ]
+        operator = "OR"
+      }
+      children = [
+      ]
+      conditions = [
+      ]
+    },
+    {
+      component = "ACTION"
+      schemaVersion = 3
+      type = "jira.issue.outgoing.email"
+      value = {
+        fromName = "Shirshir"
+        replyTo = ""
+        to = [
+          {
+            type = "REFERENCE"
+            value = jira.Group.instance.jira_administrators@b
+            additional = "GROUP"
+          },
+        ]
+        cc = [
+        ]
+        bcc = [
+          {
+            type = "REFERENCE"
+            value = jira.Group.instance.jira_admins_ori_salto_test@b
+            additional = "GROUP"
+          },
+        ]
+        subject = "Issue {{key}} has deleted or moved"
+        body = "Issue {{key}} has deleted or moved by someone outside of the group"
+        mimeType = "text/html"
+        convertLineBreaks = true
+      }
+      children = [
+      ]
+      conditions = [
+      ]
+    },
+  ]
+  canOtherRuleTrigger = false
+  notifyOnError = "FIRSTERROR"
+  projects = [
+    {
+      projectId = jira.Project.instance.AlonCompanyProject
+    },
+  ]
+  labels = [
+  ]
+  tags = [
+    {
+      tagType = "IS_RULE_UPDATED"
+      tagValue = "true"
+    },
+  ]
+  writeAccessType = "UNRESTRICTED"
+  collaborators = [
+  ]
+}

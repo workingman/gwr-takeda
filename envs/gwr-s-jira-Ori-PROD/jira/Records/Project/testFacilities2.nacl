@@ -1,0 +1,88 @@
+jira.Project testFacilities2 {
+  key = "TS2"
+  description = ""
+  name = "testFacilities2"
+  projectTypeKey = "service_desk"
+  components = [
+    jira.ProjectComponent.instance.testFacilities2__Intranet,
+    jira.ProjectComponent.instance.testFacilities2__Intranet2,
+    jira.ProjectComponent.instance.testFacilities2__Jira,
+    jira.ProjectComponent.instance.testFacilities2__Jira2,
+    jira.ProjectComponent.instance.testFacilities2__Public_website2@uus,
+  ]
+  workflowScheme = jira.WorkflowScheme.instance.Jira_Service_Management_IT_Support_Workflow_Scheme_generated_for_Project_TS@s
+  permissionScheme = jira.PermissionScheme.instance.Jira_Service_Management_Permission_Scheme_for_Project_TS@s
+  notificationScheme = jira.NotificationScheme.instance.Default_Notification_Scheme@s
+  issueTypeScreenScheme = jira.IssueTypeScreenScheme.instance.TS__Jira_Service_Management_Issue_Type_Screen_Scheme@fsssssss
+  issueTypeScheme = jira.IssueTypeScheme.instance.TS__Jira_Service_Management_Issue_Type_Scheme@fssssss
+  fieldConfigurationScheme = jira.FieldConfigurationScheme.instance.Jira_Service_Management_Field_Configuration_Scheme_for_Project_TS@s
+  leadAccountId = {
+    id = "5fa91999b2633d0076583a61"
+    displayName = "Alon Stern"
+  }
+  _generated_dependencies = [
+    {
+      reference = jira.FieldConfigurationItem.instance.Jira_Service_Management_Field_Configuration_for_Project_TS_s_Approvers__multiuserpicker__c@uuuuuuumuuuuu
+    },
+    {
+      reference = jira.FieldConfigurationItem.instance.Jira_Service_Management_Field_Configuration_for_Project_TS_s_Assignee__user@uuuuuuumuuu
+    },
+    {
+      reference = jira.FieldConfigurationItem.instance.Jira_Service_Management_Field_Configuration_for_Project_TS_s_Attachment__array@uuuuuuumuuu
+    },
+    {
+      reference = jira.FieldConfigurationItem.instance.Jira_Service_Management_Field_Configuration_for_Project_TS_s_Description__string@uuuuuuumuuu
+    },
+    {
+      reference = jira.FieldConfigurationItem.instance.Jira_Service_Management_Field_Configuration_for_Project_TS_s_Due_date__date_suu@uuuuuuumuuuum
+    },
+    {
+      reference = jira.FieldConfigurationItem.instance.Jira_Service_Management_Field_Configuration_for_Project_TS_s_Event_count__textfield__c_suuuu@uuuuuuumuuuuuum
+    },
+    {
+      reference = jira.FieldConfigurationItem.instance.Jira_Service_Management_Field_Configuration_for_Project_TS_s_Event_date__datepicker__c_suuuu@uuuuuuumuuuuuum
+    },
+    {
+      reference = jira.FieldConfigurationItem.instance.Jira_Service_Management_Field_Configuration_for_Project_TS_s_Event_location__textfield__c_suuuu@uuuuuuumuuuuuum
+    },
+    {
+      reference = jira.FieldConfigurationItem.instance.Jira_Service_Management_Field_Configuration_for_Project_TS_s_Issue_Type__issuetype_suu@uuuuuuumuuuum
+    },
+    {
+      reference = jira.FieldConfigurationItem.instance.Jira_Service_Management_Field_Configuration_for_Project_TS_s_Labels__array@uuuuuuumuuu
+    },
+    {
+      reference = jira.FieldConfigurationItem.instance.Jira_Service_Management_Field_Configuration_for_Project_TS_s_Linked_Issues__array_suu@uuuuuuumuuuum
+    },
+    {
+      reference = jira.FieldConfigurationItem.instance.Jira_Service_Management_Field_Configuration_for_Project_TS_s_Maintenance_location__textfield__c_suuuu@uuuuuuumuuuuuum
+    },
+    {
+      reference = jira.FieldConfigurationItem.instance.Jira_Service_Management_Field_Configuration_for_Project_TS_s_Maintenance_type__select__c_suuuu@uuuuuuumuuuuuum
+    },
+    {
+      reference = jira.FieldConfigurationItem.instance.Jira_Service_Management_Field_Configuration_for_Project_TS_s_Move_count__textfield__c_suuuu@uuuuuuumuuuuuum
+    },
+    {
+      reference = jira.FieldConfigurationItem.instance.Jira_Service_Management_Field_Configuration_for_Project_TS_s_Move_date__datepicker__c_suuuu@uuuuuuumuuuuuum
+    },
+    {
+      reference = jira.FieldConfigurationItem.instance.Jira_Service_Management_Field_Configuration_for_Project_TS_s_Move_from__textfield__c_suuuu@uuuuuuumuuuuuum
+    },
+    {
+      reference = jira.FieldConfigurationItem.instance.Jira_Service_Management_Field_Configuration_for_Project_TS_s_Move_to__textfield__c_suuuu@uuuuuuumuuuuuum
+    },
+    {
+      reference = jira.FieldConfigurationItem.instance.Jira_Service_Management_Field_Configuration_for_Project_TS_s_Priority__priority@uuuuuuumuuu
+    },
+    {
+      reference = jira.FieldConfigurationItem.instance.Jira_Service_Management_Field_Configuration_for_Project_TS_s_Reporter__user@uuuuuuumuuu
+    },
+    {
+      reference = jira.FieldConfigurationItem.instance.Jira_Service_Management_Field_Configuration_for_Project_TS_s_Summary__string@uuuuuuumuuu
+    },
+    {
+      reference = jira.FieldConfigurationItem.instance.Jira_Service_Management_Field_Configuration_for_Project_TS_s_Who_is_moving___multiuserpicker__c_ssauuuu@uuuuuuumuuuuuuuum
+    },
+  ]
+}

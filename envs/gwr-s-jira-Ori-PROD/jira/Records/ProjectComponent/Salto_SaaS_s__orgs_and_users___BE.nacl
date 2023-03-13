@@ -1,0 +1,7 @@
+jira.ProjectComponent Salto_SaaS_s__orgs_and_users___BE@umuusssbs {
+  name = "orgs and users - BE"
+  assigneeType = "COMPONENT_LEAD"
+  _parent = [
+    jira.Project.instance.Salto_SaaS@s,
+  ]
+}

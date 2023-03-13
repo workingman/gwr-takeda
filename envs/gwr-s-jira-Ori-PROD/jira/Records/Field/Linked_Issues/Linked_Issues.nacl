@@ -1,0 +1,9 @@
+jira.Field Linked_Issues__array@suu {
+  name = "Linked Issues"
+  schema = {
+    type = "array"
+    items = "issuelinks"
+    system = "issuelinks"
+  }
+  description = ""
+}

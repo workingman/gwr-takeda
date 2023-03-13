@@ -1,0 +1,15 @@
+jira.NotificationScheme My_new_notification_scheme@s {
+  name = "My new notification scheme"
+  description = "My new scheme description"
+  notificationSchemeEvents = [
+    {
+      notifications = [
+        {
+          parameter = "a@b.com"
+          type = "EmailAddress"
+        },
+      ]
+      eventType = jira.IssueEvent.instance.Issue_Created@s
+    },
+  ]
+}

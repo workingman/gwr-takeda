@@ -1,0 +1,7 @@
+jira.ProjectComponent Salto__Zuora_Billing_Adapter@uuss {
+  name = "Zuora Billing Adapter"
+  assigneeType = "PROJECT_DEFAULT"
+  _parent = [
+    jira.Project.instance.Salto,
+  ]
+}

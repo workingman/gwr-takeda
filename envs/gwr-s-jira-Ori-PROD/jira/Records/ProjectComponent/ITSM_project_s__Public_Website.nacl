@@ -1,0 +1,12 @@
+jira.ProjectComponent ITSM_project_s__Public_Website@umuus {
+  description = "Created by Jira Service Management"
+  name = "Public Website"
+  assigneeType = "PROJECT_DEFAULT"
+  leadAccountId = {
+    id = "60e8b78784c9920071996842"
+    displayName = "Lior Neudorfer"
+  }
+  _parent = [
+    jira.Project.instance.ITSM_project@s,
+  ]
+}

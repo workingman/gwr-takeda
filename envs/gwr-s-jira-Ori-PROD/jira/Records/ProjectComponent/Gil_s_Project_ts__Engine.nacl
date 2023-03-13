@@ -1,0 +1,8 @@
+jira.ProjectComponent Gil_s_Project_ts__Engine@uumuu {
+  description = "The engine component"
+  name = "Engine"
+  assigneeType = "PROJECT_DEFAULT"
+  _parent = [
+    jira.Project.instance.Gil_s_Project@ts,
+  ]
+}

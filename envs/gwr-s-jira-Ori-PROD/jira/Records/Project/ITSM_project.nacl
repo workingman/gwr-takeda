@@ -1,0 +1,135 @@
+jira.Project ITSM_project@s {
+  key = "IP"
+  description = ""
+  name = "ITSM project"
+  projectTypeKey = "service_desk"
+  components = [
+    jira.ProjectComponent.instance.ITSM_project_s__Active_Directory@umuus,
+    jira.ProjectComponent.instance.ITSM_project_s__Analytics_and_Reporting_Service@umuusss,
+    jira.ProjectComponent.instance.ITSM_project_s__Billing_Services@umuus,
+    jira.ProjectComponent.instance.ITSM_project_s__Cloud_Storage_Services@umuuss,
+    jira.ProjectComponent.instance.ITSM_project_s__Data_Center_Services@umuuss,
+    jira.ProjectComponent.instance.ITSM_project_s__Email_and_Collaboration_Services@umuusss,
+    jira.ProjectComponent.instance.ITSM_project_s__Financial_Services@umuus,
+    jira.ProjectComponent.instance.ITSM_project_s__HR_Services@umuus,
+    jira.ProjectComponent.instance.ITSM_project_s__Intranet@umuu,
+    jira.ProjectComponent.instance.ITSM_project_s__Jira@umuu,
+    jira.ProjectComponent.instance.ITSM_project_s__Office_Network@umuus,
+    jira.ProjectComponent.instance.ITSM_project_s__Payroll_Services@umuus,
+    jira.ProjectComponent.instance.ITSM_project_s__Printers@umuu,
+    jira.ProjectComponent.instance.ITSM_project_s__Public_Website@umuus,
+    jira.ProjectComponent.instance.ITSM_project_s__VPN_Server@umuus,
+    jira.ProjectComponent.instance.ITSM_project_s__Webstore_Purchasing_Services@umuuss,
+  ]
+  workflowScheme = jira.WorkflowScheme.instance.Jira_Service_Management_IT_Support_Workflow_Scheme_generated_for_Project_IP@s
+  permissionScheme = jira.PermissionScheme.instance.Jira_Service_Management_Permission_Scheme_for_Project_IP@s
+  notificationScheme = jira.NotificationScheme.instance.Default_Notification_Scheme@s
+  issueTypeScreenScheme = jira.IssueTypeScreenScheme.instance.IP__Jira_Service_Management_Issue_Type_Screen_Scheme@fsssssss
+  issueTypeScheme = jira.IssueTypeScheme.instance.IP__Jira_Service_Management_Issue_Type_Scheme@fssssss
+  fieldConfigurationScheme = jira.FieldConfigurationScheme.instance.Jira_Service_Management_Field_Configuration_Scheme_for_Project_IP@s
+  leadAccountId = {
+    id = "60e8b78784c9920071996842"
+    displayName = "Lior Neudorfer"
+  }
+  _generated_dependencies = [
+    {
+      reference = jira.FieldConfigurationItem.instance.Jira_Service_Management_Field_Configuration_for_Project_IP_s_Affected_hardware__textfield__c_suuuu@uuuuuuumuuuuuum
+    },
+    {
+      reference = jira.FieldConfigurationItem.instance.Jira_Service_Management_Field_Configuration_for_Project_IP_s_Approver_groups__multigrouppicker__c_suuuu@uuuuuuumuuuuuum
+    },
+    {
+      reference = jira.FieldConfigurationItem.instance.Jira_Service_Management_Field_Configuration_for_Project_IP_s_Approvers__multiuserpicker__c@uuuuuuumuuuuu
+    },
+    {
+      reference = jira.FieldConfigurationItem.instance.Jira_Service_Management_Field_Configuration_for_Project_IP_s_Assignee__user@uuuuuuumuuu
+    },
+    {
+      reference = jira.FieldConfigurationItem.instance.Jira_Service_Management_Field_Configuration_for_Project_IP_s_Attachment__array@uuuuuuumuuu
+    },
+    {
+      reference = jira.FieldConfigurationItem.instance.Jira_Service_Management_Field_Configuration_for_Project_IP_s_Backout_plan__textarea__c_suuuu@uuuuuuumuuuuuum
+    },
+    {
+      reference = jira.FieldConfigurationItem.instance.Jira_Service_Management_Field_Configuration_for_Project_IP_s_Change_completion_date__datetime__c_ssuuuu@uuuuuuumuuuuuuum
+    },
+    {
+      reference = jira.FieldConfigurationItem.instance.Jira_Service_Management_Field_Configuration_for_Project_IP_s_Change_reason__select__c_suuuu@uuuuuuumuuuuuum
+    },
+    {
+      reference = jira.FieldConfigurationItem.instance.Jira_Service_Management_Field_Configuration_for_Project_IP_s_Change_risk__select__c_suuuu@uuuuuuumuuuuuum
+    },
+    {
+      reference = jira.FieldConfigurationItem.instance.Jira_Service_Management_Field_Configuration_for_Project_IP_s_Change_start_date__datetime__c_ssuuuu@uuuuuuumuuuuuuum
+    },
+    {
+      reference = jira.FieldConfigurationItem.instance.Jira_Service_Management_Field_Configuration_for_Project_IP_s_Change_type__select__c_suuuu@uuuuuuumuuuuuum
+    },
+    {
+      reference = jira.FieldConfigurationItem.instance.Jira_Service_Management_Field_Configuration_for_Project_IP_s_Components__array@uuuuuuumuuu
+    },
+    {
+      reference = jira.FieldConfigurationItem.instance.Jira_Service_Management_Field_Configuration_for_Project_IP_s_Description__string@uuuuuuumuuu
+    },
+    {
+      reference = jira.FieldConfigurationItem.instance.Jira_Service_Management_Field_Configuration_for_Project_IP_s_Due_date__date_suu@uuuuuuumuuuum
+    },
+    {
+      reference = jira.FieldConfigurationItem.instance.Jira_Service_Management_Field_Configuration_for_Project_IP_s_Impact__select__c@uuuuuuumuuuuu
+    },
+    {
+      reference = jira.FieldConfigurationItem.instance.Jira_Service_Management_Field_Configuration_for_Project_IP_s_Implementation_plan__textarea__c_suuuu@uuuuuuumuuuuuum
+    },
+    {
+      reference = jira.FieldConfigurationItem.instance.Jira_Service_Management_Field_Configuration_for_Project_IP_s_Investigation_reason__select__c_suuuu@uuuuuuumuuuuuum
+    },
+    {
+      reference = jira.FieldConfigurationItem.instance.Jira_Service_Management_Field_Configuration_for_Project_IP_s_Issue_Type__issuetype_suu@uuuuuuumuuuum
+    },
+    {
+      reference = jira.FieldConfigurationItem.instance.Jira_Service_Management_Field_Configuration_for_Project_IP_s_Labels__array@uuuuuuumuuu
+    },
+    {
+      reference = jira.FieldConfigurationItem.instance.Jira_Service_Management_Field_Configuration_for_Project_IP_s_Linked_Issues__array_suu@uuuuuuumuuuum
+    },
+    {
+      reference = jira.FieldConfigurationItem.instance.Jira_Service_Management_Field_Configuration_for_Project_IP_s_Operational_categorization__cascadingselect__c_suuuu@uuuuuuumuuuuuum
+    },
+    {
+      reference = jira.FieldConfigurationItem.instance.Jira_Service_Management_Field_Configuration_for_Project_IP_s_Pending_reason__select__c_suuuu@uuuuuuumuuuuuum
+    },
+    {
+      reference = jira.FieldConfigurationItem.instance.Jira_Service_Management_Field_Configuration_for_Project_IP_s_Planned_end__datetime__c_suuuu@uuuuuuumuuuuuum
+    },
+    {
+      reference = jira.FieldConfigurationItem.instance.Jira_Service_Management_Field_Configuration_for_Project_IP_s_Planned_start__datetime__c_suuuu@uuuuuuumuuuuuum
+    },
+    {
+      reference = jira.FieldConfigurationItem.instance.Jira_Service_Management_Field_Configuration_for_Project_IP_s_Priority__priority@uuuuuuumuuu
+    },
+    {
+      reference = jira.FieldConfigurationItem.instance.Jira_Service_Management_Field_Configuration_for_Project_IP_s_Product_categorization__cascadingselect__c_suuuu@uuuuuuumuuuuuum
+    },
+    {
+      reference = jira.FieldConfigurationItem.instance.Jira_Service_Management_Field_Configuration_for_Project_IP_s_Reporter__user@uuuuuuumuuu
+    },
+    {
+      reference = jira.FieldConfigurationItem.instance.Jira_Service_Management_Field_Configuration_for_Project_IP_s_Root_cause__textarea__c_suuuu@uuuuuuumuuuuuum
+    },
+    {
+      reference = jira.FieldConfigurationItem.instance.Jira_Service_Management_Field_Configuration_for_Project_IP_s_Severity__select__c@uuuuuuumuuuuu
+    },
+    {
+      reference = jira.FieldConfigurationItem.instance.Jira_Service_Management_Field_Configuration_for_Project_IP_s_Summary__string@uuuuuuumuuu
+    },
+    {
+      reference = jira.FieldConfigurationItem.instance.Jira_Service_Management_Field_Configuration_for_Project_IP_s_Test_plan__textarea__c_suuuu@uuuuuuumuuuuuum
+    },
+    {
+      reference = jira.FieldConfigurationItem.instance.Jira_Service_Management_Field_Configuration_for_Project_IP_s_Urgency__select__c@uuuuuuumuuuuu
+    },
+    {
+      reference = jira.FieldConfigurationItem.instance.Jira_Service_Management_Field_Configuration_for_Project_IP_s_Workaround__textarea__c@uuuuuuumuuuuu
+    },
+  ]
+}

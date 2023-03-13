@@ -1,0 +1,137 @@
+jira.Automation When_parent_is_done___move_all_sub_tasks_to_done_Jira_management@ssss_08594sssbssus {
+  name = "When parent is done → move all sub-tasks to done"
+  state = "ENABLED"
+  authorAccountId = {
+    id = "5e5e289fc8ec310c955d2d15"
+    displayName = "Hadas Birin"
+  }
+  actor = {
+    type = "ACCOUNT_ID"
+    value = {
+      id = "557058:f58131cb-b67d-43c7-b30d-6b58d40bd077"
+      displayName = "Automation for Jira"
+    }
+  }
+  trigger = {
+    component = "TRIGGER"
+    schemaVersion = -1
+    type = "jira.issue.event.trigger:transitioned"
+    value = {
+      eventKey = "jira:issue_updated"
+      issueEvent = "issue_generic"
+      fromStatus = [
+      ]
+      toStatus = [
+        {
+          type = "ID"
+          value = jira.Status.instance.done
+        },
+      ]
+    }
+    children = [
+    ]
+    conditions = [
+    ]
+  }
+  components = [
+    {
+      component = "BRANCH"
+      schemaVersion = 1
+      type = "jira.issue.related"
+      value = {
+        relatedType = "subtasks"
+        linkTypes = [
+        ]
+        onlyUpdatedIssues = false
+        similarityLimit = 0
+        compareValue = 0
+      }
+      children = [
+        {
+          component = "CONDITION"
+          schemaVersion = 3
+          type = "jira.issue.condition"
+          value = {
+            selectedField = {
+              type = "ID"
+              value = jira.Field.instance.Status__status
+            }
+            selectedFieldType = "status"
+            comparison = "NOT_EQUAL"
+            compareFieldValue = {
+              type = "ID"
+              value = "10002"
+              multiValue = false
+            }
+          }
+          children = [
+          ]
+          conditions = [
+          ]
+        },
+        {
+          component = "ACTION"
+          schemaVersion = 10
+          type = "jira.issue.transition"
+          value = {
+            operations = [
+              {
+                field = {
+                  type = "ID"
+                  value = jira.Field.instance.Resolution__resolution
+                }
+                fieldType = "resolution"
+                type = "SET"
+                value = {
+                  type = "COPY"
+                  value = jira.Field.instance.Parent
+                }
+              },
+            ]
+            sendNotifications = true
+            destinationStatus = {
+              type = "ID"
+              value = "10002"
+            }
+          }
+          children = [
+          ]
+          conditions = [
+          ]
+        },
+      ]
+      conditions = [
+      ]
+    },
+  ]
+  canOtherRuleTrigger = false
+  notifyOnError = "FIRSTERROR"
+  projects = [
+    {
+      projectId = jira.Project.instance.Jira_management@s
+    },
+  ]
+  labels = [
+  ]
+  tags = [
+    {
+      tagType = "CREATION_TYPE"
+      tagValue = "USER"
+    },
+    {
+      tagType = "IS_RULE_UPDATED"
+      tagValue = "true"
+    },
+    {
+      tagType = "SAMPLE_RULE"
+      tagValue = "global"
+    },
+    {
+      tagType = "TEMPLATE_ID"
+      tagValue = "software_template_5"
+    },
+  ]
+  writeAccessType = "UNRESTRICTED"
+  collaborators = [
+  ]
+}

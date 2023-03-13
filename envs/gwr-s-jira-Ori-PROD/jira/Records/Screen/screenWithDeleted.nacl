@@ -1,0 +1,10 @@
+jira.Screen screenWithDeleted {
+  name = "screenWithDeleted"
+  description = ""
+  tabs = {
+    Field_Tab@s = {
+      name = "Field Tab"
+      position = 0
+    }
+  }
+}
